@@ -1,0 +1,7 @@
+2025-04-05 14:40:31,535 - INFO - Loading test prompts from red_team_test_prompts_anthropic_500.json
+2025-04-05 14:40:31,564 - INFO - Loaded 5000 test prompts
+2025-04-05 14:40:31,565 - INFO - Processing model: Qwen/Qwen2.5-0.5B-Instruct
+2025-04-05 14:40:31,565 - INFO - Loading model and tokenizer for Qwen/Qwen2.5-0.5B-Instruct
+2025-04-05 14:40:32,758 - INFO - We will use 90% of the memory on device 0 for storing the model, and 10% for the buffer to avoid OOM. You can set `max_memory` in to a higher value to use more memory (at your own risk).
+2025-04-05 14:40:34,700 - INFO - Using device: cuda:0
+2025-04-05 14:40:34,701 - INFO - Using batch size of 8 for Qwen/Qwen2.5-0.5B-Instruct

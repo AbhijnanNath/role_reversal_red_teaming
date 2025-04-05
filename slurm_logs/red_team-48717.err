@@ -1,0 +1,23 @@
+
+CondaError: Run 'conda init' before 'conda activate'
+
+The following values were not passed to `accelerate launch` and had defaults used instead:
+	`--num_processes` was set to a value of `1`
+	`--num_machines` was set to a value of `1`
+	`--mixed_precision` was set to a value of `'no'`
+	`--dynamo_backend` was set to a value of `'no'`
+To avoid this warning pass in values for each of the problematic parameters or run `accelerate config`.
+Traceback (most recent call last):
+  File "/nfs/home/anath/trl/examples/research_projects/stack_llama_2/scripts/RED_TEAMING_EXPERIMENTS/red_teaming_inference_run_2.py", line 246, in <module>
+    for result in model_results:
+NameError: name 'model_results' is not defined
+Traceback (most recent call last):
+  File "/nfs/home/anath/miniconda3/envs/py310/bin/accelerate", line 8, in <module>
+    sys.exit(main())
+  File "/nfs/home/anath/miniconda3/envs/py310/lib/python3.10/site-packages/accelerate/commands/accelerate_cli.py", line 48, in main
+    args.func(args)
+  File "/nfs/home/anath/miniconda3/envs/py310/lib/python3.10/site-packages/accelerate/commands/launch.py", line 1199, in launch_command
+    simple_launcher(args)
+  File "/nfs/home/anath/miniconda3/envs/py310/lib/python3.10/site-packages/accelerate/commands/launch.py", line 778, in simple_launcher
+    raise subprocess.CalledProcessError(returncode=process.returncode, cmd=cmd)
+subprocess.CalledProcessError: Command '['/nfs/home/anath/miniconda3/envs/py310/bin/python', 'red_teaming_inference_run_2.py']' returned non-zero exit status 1.

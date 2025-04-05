@@ -1,0 +1,36 @@
+
+CondaError: Run 'conda init' before 'conda activate'
+
+The following values were not passed to `accelerate launch` and had defaults used instead:
+	`--num_processes` was set to a value of `1`
+	`--num_machines` was set to a value of `1`
+	`--mixed_precision` was set to a value of `'no'`
+	`--dynamo_backend` was set to a value of `'no'`
+To avoid this warning pass in values for each of the problematic parameters or run `accelerate config`.
+2025-04-05 04:01:25,179 - INFO - Loading test prompts from red_team_test_prompts_anthropic.json
+2025-04-05 04:01:25,185 - INFO - Loaded 1000 test prompts
+2025-04-05 04:01:25,185 - INFO - Processing model: meta-llama/Meta-Llama-3-8B-Instruct
+2025-04-05 04:01:25,185 - INFO - Loading model and tokenizer for meta-llama/Meta-Llama-3-8B-Instruct
+2025-04-05 04:01:25,968 - INFO - We will use 90% of the memory on device 0 for storing the model, and 10% for the buffer to avoid OOM. You can set `max_memory` in to a higher value to use more memory (at your own risk).
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:02<00:07,  2.53s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:05<00:05,  2.65s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:07<00:02,  2.65s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:08<00:00,  1.93s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:08<00:00,  2.19s/it]
+2025-04-05 04:01:34,985 - INFO - Using device: cuda:0
+Processing meta-llama/Meta-Llama-3-8B-Instruct:   0%|          | 0/1000 [00:00<?, ?it/s]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+2025-04-05 04:01:47,110 - WARNING - compute_metrics function not available or error: name 'device' is not defined
+Processing meta-llama/Meta-Llama-3-8B-Instruct:   0%|          | 1/1000 [00:12<3:21:52, 12.12s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+2025-04-05 04:01:54,221 - WARNING - compute_metrics function not available or error: name 'device' is not defined
+Processing meta-llama/Meta-Llama-3-8B-Instruct:   0%|          | 2/1000 [00:19<2:32:37,  9.18s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+2025-04-05 04:02:01,009 - WARNING - compute_metrics function not available or error: name 'device' is not defined
+Processing meta-llama/Meta-Llama-3-8B-Instruct:   0%|          | 3/1000 [00:26<2:14:20,  8.09s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+2025-04-05 04:02:07,785 - WARNING - compute_metrics function not available or error: name 'device' is not defined
+Processing meta-llama/Meta-Llama-3-8B-Instruct:   0%|          | 4/1000 [00:32<2:05:38,  7.57s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+2025-04-05 04:02:11,858 - WARNING - compute_metrics function not available or error: name 'device' is not defined
+Processing meta-llama/Meta-Llama-3-8B-Instruct:   0%|          | 5/1000 [00:36<1:44:36,  6.31s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+2025-04-05 04:02:18,612 - WARNING - compute_metrics function not available or error: name 'device' is not defined
+Processing meta-llama/Meta-Llama-3-8B-Instruct:   1%|          | 6/1000 [00:43<1:47:00,  6.46s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+2025-04-05 04:02:24,833 - WARNING - compute_metrics function not available or error: name 'device' is not defined
+Processing meta-llama/Meta-Llama-3-8B-Instruct:   1%|          | 7/1000 [00:49<1:45:37,  6.38s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+2025-04-05 04:02:31,584 - WARNING - compute_metrics function not available or error: name 'device' is not defined
+Processing meta-llama/Meta-Llama-3-8B-Instruct:   1%|          | 8/1000 [00:56<1:47:27,  6.50s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+2025-04-05 04:02:38,339 - WARNING - compute_metrics function not available or error: name 'device' is not defined
+Processing meta-llama/Meta-Llama-3-8B-Instruct:   1%|          | 9/1000 [01:03<1:48:39,  6.58s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+slurmstepd: error: *** JOB 48714 ON gnode002 CANCELLED AT 2025-04-05T04:02:41 ***

@@ -1,0 +1,1119 @@
+
+CondaError: Run 'conda init' before 'conda activate'
+
+The following values were not passed to `accelerate launch` and had defaults used instead:
+	`--num_processes` was set to a value of `1`
+	`--num_machines` was set to a value of `1`
+	`--mixed_precision` was set to a value of `'no'`
+	`--dynamo_backend` was set to a value of `'no'`
+To avoid this warning pass in values for each of the problematic parameters or run `accelerate config`.
+2025-04-05 04:07:29,345 - INFO - Loading test prompts from red_team_test_prompts_anthropic.json
+2025-04-05 04:07:29,351 - INFO - Loaded 1000 test prompts
+2025-04-05 04:07:29,351 - INFO - Processing model: meta-llama/Meta-Llama-3-8B-Instruct
+2025-04-05 04:07:29,351 - INFO - Loading model and tokenizer for meta-llama/Meta-Llama-3-8B-Instruct
+2025-04-05 04:07:30,152 - INFO - We will use 90% of the memory on device 0 for storing the model, and 10% for the buffer to avoid OOM. You can set `max_memory` in to a higher value to use more memory (at your own risk).
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:02<00:07,  2.53s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:05<00:05,  2.58s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:07<00:02,  2.56s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:08<00:00,  1.83s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:08<00:00,  2.10s/it]
+2025-04-05 04:07:38,743 - INFO - Using device: cuda:0
+Processing meta-llama/Meta-Llama-3-8B-Instruct:   0%|          | 0/1000 [00:00<?, ?it/s]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:   0%|          | 1/1000 [00:07<1:57:27,  7.05s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:   0%|          | 2/1000 [00:10<1:26:45,  5.22s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:   0%|          | 3/1000 [00:17<1:38:10,  5.91s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:   0%|          | 4/1000 [00:21<1:23:46,  5.05s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:   0%|          | 5/1000 [00:25<1:20:31,  4.86s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:   1%|          | 6/1000 [00:29<1:12:32,  4.38s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:   1%|          | 7/1000 [00:36<1:25:06,  5.14s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:   1%|          | 8/1000 [00:43<1:34:32,  5.72s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:   1%|          | 9/1000 [00:49<1:39:38,  6.03s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+2025-04-05 04:08:35,261 - INFO - Saved intermediate results for meta-llama/Meta-Llama-3-8B-Instruct (10/1000)
+Processing meta-llama/Meta-Llama-3-8B-Instruct:   1%|          | 10/1000 [00:56<1:43:00,  6.24s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:   1%|          | 11/1000 [01:00<1:31:00,  5.52s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:   1%|          | 12/1000 [01:07<1:36:58,  5.89s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:   1%|▏         | 13/1000 [01:09<1:19:27,  4.83s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:   1%|▏         | 14/1000 [01:12<1:09:55,  4.26s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:   2%|▏         | 15/1000 [01:15<1:03:54,  3.89s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:   2%|▏         | 16/1000 [01:22<1:17:46,  4.74s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:   2%|▏         | 17/1000 [01:23<58:27,  3.57s/it]  Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:   2%|▏         | 18/1000 [01:24<48:03,  2.94s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:   2%|▏         | 19/1000 [01:25<38:58,  2.38s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+2025-04-05 04:09:11,105 - INFO - Saved intermediate results for meta-llama/Meta-Llama-3-8B-Instruct (20/1000)
+Processing meta-llama/Meta-Llama-3-8B-Instruct:   2%|▏         | 20/1000 [01:32<1:00:17,  3.69s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:   2%|▏         | 21/1000 [01:39<1:15:04,  4.60s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:   2%|▏         | 22/1000 [01:39<55:45,  3.42s/it]  Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:   2%|▏         | 23/1000 [01:46<1:11:48,  4.41s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:   2%|▏         | 24/1000 [01:52<1:17:25,  4.76s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:   2%|▎         | 25/1000 [01:52<57:08,  3.52s/it]  Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:   3%|▎         | 26/1000 [01:53<43:18,  2.67s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:   3%|▎         | 27/1000 [01:54<33:55,  2.09s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:   3%|▎         | 28/1000 [01:54<26:57,  1.66s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:   3%|▎         | 29/1000 [01:55<21:56,  1.36s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+2025-04-05 04:09:40,906 - INFO - Saved intermediate results for meta-llama/Meta-Llama-3-8B-Instruct (30/1000)
+Processing meta-llama/Meta-Llama-3-8B-Instruct:   3%|▎         | 30/1000 [02:02<48:08,  2.98s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:   3%|▎         | 31/1000 [02:08<1:06:24,  4.11s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:   3%|▎         | 32/1000 [02:15<1:19:06,  4.90s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:   3%|▎         | 33/1000 [02:22<1:27:55,  5.46s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:   3%|▎         | 34/1000 [02:29<1:33:56,  5.84s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:   4%|▎         | 35/1000 [02:35<1:38:07,  6.10s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:   4%|▎         | 36/1000 [02:39<1:27:48,  5.46s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:   4%|▎         | 37/1000 [02:44<1:25:32,  5.33s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:   4%|▍         | 38/1000 [02:51<1:32:07,  5.75s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:   4%|▍         | 39/1000 [02:58<1:36:45,  6.04s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+2025-04-05 04:10:39,957 - INFO - Saved intermediate results for meta-llama/Meta-Llama-3-8B-Instruct (40/1000)
+Processing meta-llama/Meta-Llama-3-8B-Instruct:   4%|▍         | 40/1000 [03:01<1:21:39,  5.10s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:   4%|▍         | 41/1000 [03:06<1:23:15,  5.21s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:   4%|▍         | 42/1000 [03:13<1:30:23,  5.66s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:   4%|▍         | 43/1000 [03:20<1:35:22,  5.98s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:   4%|▍         | 44/1000 [03:21<1:12:17,  4.54s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:   4%|▍         | 45/1000 [03:23<1:02:21,  3.92s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:   5%|▍         | 46/1000 [03:30<1:15:43,  4.76s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:   5%|▍         | 47/1000 [03:37<1:24:58,  5.35s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:   5%|▍         | 48/1000 [03:37<1:03:06,  3.98s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:   5%|▍         | 49/1000 [03:44<1:16:07,  4.80s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+2025-04-05 04:11:24,510 - INFO - Saved intermediate results for meta-llama/Meta-Llama-3-8B-Instruct (50/1000)
+Processing meta-llama/Meta-Llama-3-8B-Instruct:   5%|▌         | 50/1000 [03:45<58:15,  3.68s/it]  Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:   5%|▌         | 51/1000 [03:52<1:12:30,  4.58s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:   5%|▌         | 52/1000 [03:54<1:00:20,  3.82s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:   5%|▌         | 53/1000 [04:01<1:14:00,  4.69s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:   5%|▌         | 54/1000 [04:07<1:23:37,  5.30s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:   6%|▌         | 55/1000 [04:14<1:30:08,  5.72s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:   6%|▌         | 56/1000 [04:21<1:34:50,  6.03s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:   6%|▌         | 57/1000 [04:28<1:38:10,  6.25s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:   6%|▌         | 58/1000 [04:34<1:40:25,  6.40s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:   6%|▌         | 59/1000 [04:41<1:41:53,  6.50s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+2025-04-05 04:12:27,109 - INFO - Saved intermediate results for meta-llama/Meta-Llama-3-8B-Instruct (60/1000)
+Processing meta-llama/Meta-Llama-3-8B-Instruct:   6%|▌         | 60/1000 [04:48<1:42:54,  6.57s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:   6%|▌         | 61/1000 [04:51<1:27:04,  5.56s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:   6%|▌         | 62/1000 [04:58<1:32:27,  5.91s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:   6%|▋         | 63/1000 [05:02<1:22:05,  5.26s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:   6%|▋         | 64/1000 [05:04<1:09:20,  4.45s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:   6%|▋         | 65/1000 [05:11<1:19:55,  5.13s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:   7%|▋         | 66/1000 [05:12<59:21,  3.81s/it]  Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:   7%|▋         | 67/1000 [05:18<1:12:47,  4.68s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:   7%|▋         | 68/1000 [05:19<53:53,  3.47s/it]  Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:   7%|▋         | 69/1000 [05:19<40:03,  2.58s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+2025-04-05 04:12:59,275 - INFO - Saved intermediate results for meta-llama/Meta-Llama-3-8B-Instruct (70/1000)
+Processing meta-llama/Meta-Llama-3-8B-Instruct:   7%|▋         | 70/1000 [05:20<30:52,  1.99s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:   7%|▋         | 71/1000 [05:27<52:45,  3.41s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:   7%|▋         | 72/1000 [05:27<39:55,  2.58s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:   7%|▋         | 73/1000 [05:34<59:03,  3.82s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:   7%|▋         | 74/1000 [05:41<1:12:21,  4.69s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:   8%|▊         | 75/1000 [05:48<1:21:33,  5.29s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:   8%|▊         | 76/1000 [05:48<1:00:02,  3.90s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:   8%|▊         | 77/1000 [05:49<45:05,  2.93s/it]  Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:   8%|▊         | 78/1000 [05:50<37:50,  2.46s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:   8%|▊         | 79/1000 [05:52<33:17,  2.17s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+2025-04-05 04:13:37,670 - INFO - Saved intermediate results for meta-llama/Meta-Llama-3-8B-Instruct (80/1000)
+Processing meta-llama/Meta-Llama-3-8B-Instruct:   8%|▊         | 80/1000 [05:58<54:14,  3.54s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:   8%|▊         | 81/1000 [06:05<1:08:42,  4.49s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:   8%|▊         | 82/1000 [06:12<1:18:44,  5.15s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:   8%|▊         | 83/1000 [06:19<1:25:44,  5.61s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:   8%|▊         | 84/1000 [06:25<1:30:41,  5.94s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:   8%|▊         | 85/1000 [06:32<1:34:06,  6.17s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:   9%|▊         | 86/1000 [06:39<1:36:19,  6.32s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:   9%|▊         | 87/1000 [06:45<1:37:49,  6.43s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:   9%|▉         | 88/1000 [06:52<1:38:54,  6.51s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:   9%|▉         | 89/1000 [06:53<1:13:23,  4.83s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+2025-04-05 04:14:38,865 - INFO - Saved intermediate results for meta-llama/Meta-Llama-3-8B-Instruct (90/1000)
+Processing meta-llama/Meta-Llama-3-8B-Instruct:   9%|▉         | 90/1000 [07:00<1:21:54,  5.40s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:   9%|▉         | 91/1000 [07:06<1:27:52,  5.80s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:   9%|▉         | 92/1000 [07:13<1:31:58,  6.08s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:   9%|▉         | 93/1000 [07:15<1:14:13,  4.91s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:   9%|▉         | 94/1000 [07:19<1:09:52,  4.63s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  10%|▉         | 95/1000 [07:26<1:19:15,  5.25s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  10%|▉         | 96/1000 [07:32<1:23:07,  5.52s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  10%|▉         | 97/1000 [07:36<1:17:02,  5.12s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  10%|▉         | 98/1000 [07:43<1:24:02,  5.59s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  10%|▉         | 99/1000 [07:46<1:14:36,  4.97s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+2025-04-05 04:15:30,698 - INFO - Saved intermediate results for meta-llama/Meta-Llama-3-8B-Instruct (100/1000)
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  10%|█         | 100/1000 [07:51<1:14:33,  4.97s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  10%|█         | 101/1000 [07:58<1:22:19,  5.49s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  10%|█         | 102/1000 [08:05<1:27:40,  5.86s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  10%|█         | 103/1000 [08:12<1:31:23,  6.11s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  10%|█         | 104/1000 [08:14<1:13:53,  4.95s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  10%|█         | 105/1000 [08:18<1:09:30,  4.66s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  11%|█         | 106/1000 [08:25<1:18:38,  5.28s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  11%|█         | 107/1000 [08:25<58:53,  3.96s/it]  Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  11%|█         | 108/1000 [08:30<1:02:19,  4.19s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  11%|█         | 109/1000 [08:31<48:52,  3.29s/it]  Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+2025-04-05 04:16:17,314 - INFO - Saved intermediate results for meta-llama/Meta-Llama-3-8B-Instruct (110/1000)
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  11%|█         | 110/1000 [08:38<1:04:10,  4.33s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  11%|█         | 111/1000 [08:42<1:04:25,  4.35s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  11%|█         | 112/1000 [08:47<1:06:27,  4.49s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  11%|█▏        | 113/1000 [08:54<1:16:15,  5.16s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  11%|█▏        | 114/1000 [09:01<1:23:01,  5.62s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  12%|█▏        | 115/1000 [09:03<1:06:20,  4.50s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  12%|█▏        | 116/1000 [09:06<59:34,  4.04s/it]  Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  12%|█▏        | 117/1000 [09:06<44:34,  3.03s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  12%|█▏        | 118/1000 [09:13<1:00:41,  4.13s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  12%|█▏        | 119/1000 [09:14<45:19,  3.09s/it]  Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+2025-04-05 04:16:55,486 - INFO - Saved intermediate results for meta-llama/Meta-Llama-3-8B-Instruct (120/1000)
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  12%|█▏        | 120/1000 [09:16<43:23,  2.96s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  12%|█▏        | 121/1000 [09:23<59:48,  4.08s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  12%|█▏        | 122/1000 [09:30<1:11:15,  4.87s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  12%|█▏        | 123/1000 [09:36<1:19:10,  5.42s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  12%|█▏        | 124/1000 [09:43<1:24:41,  5.80s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  12%|█▎        | 125/1000 [09:50<1:28:26,  6.06s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  13%|█▎        | 126/1000 [09:54<1:20:10,  5.50s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  13%|█▎        | 127/1000 [10:01<1:25:17,  5.86s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  13%|█▎        | 128/1000 [10:07<1:28:49,  6.11s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  13%|█▎        | 129/1000 [10:14<1:31:10,  6.28s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+2025-04-05 04:17:59,992 - INFO - Saved intermediate results for meta-llama/Meta-Llama-3-8B-Instruct (130/1000)
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  13%|█▎        | 130/1000 [10:21<1:33:09,  6.43s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  13%|█▎        | 131/1000 [10:25<1:22:58,  5.73s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  13%|█▎        | 132/1000 [10:32<1:27:12,  6.03s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  13%|█▎        | 133/1000 [10:37<1:22:24,  5.70s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  13%|█▎        | 134/1000 [10:43<1:26:35,  6.00s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  14%|█▎        | 135/1000 [10:44<1:05:07,  4.52s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  14%|█▎        | 136/1000 [10:46<55:04,  3.82s/it]  Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  14%|█▎        | 137/1000 [10:48<45:26,  3.16s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  14%|█▍        | 138/1000 [10:55<1:00:44,  4.23s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  14%|█▍        | 139/1000 [10:56<45:32,  3.17s/it]  Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+2025-04-05 04:18:41,536 - INFO - Saved intermediate results for meta-llama/Meta-Llama-3-8B-Instruct (140/1000)
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  14%|█▍        | 140/1000 [11:02<1:00:56,  4.25s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  14%|█▍        | 141/1000 [11:09<1:11:26,  4.99s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  14%|█▍        | 142/1000 [11:16<1:18:42,  5.50s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  14%|█▍        | 143/1000 [11:22<1:23:49,  5.87s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  14%|█▍        | 144/1000 [11:29<1:27:21,  6.12s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  14%|█▍        | 145/1000 [11:32<1:13:04,  5.13s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  15%|█▍        | 146/1000 [11:39<1:19:43,  5.60s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  15%|█▍        | 147/1000 [11:42<1:10:41,  4.97s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  15%|█▍        | 148/1000 [11:49<1:17:54,  5.49s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  15%|█▍        | 149/1000 [11:56<1:23:01,  5.85s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+2025-04-05 04:19:41,560 - INFO - Saved intermediate results for meta-llama/Meta-Llama-3-8B-Instruct (150/1000)
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  15%|█▌        | 150/1000 [12:02<1:26:47,  6.13s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  15%|█▌        | 151/1000 [12:08<1:25:03,  6.01s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  15%|█▌        | 152/1000 [12:09<1:02:56,  4.45s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  15%|█▌        | 153/1000 [12:16<1:12:20,  5.12s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  15%|█▌        | 154/1000 [12:16<52:57,  3.76s/it]  Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  16%|█▌        | 155/1000 [12:17<40:22,  2.87s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  16%|█▌        | 156/1000 [12:18<32:48,  2.33s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  16%|█▌        | 157/1000 [12:19<26:04,  1.86s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  16%|█▌        | 158/1000 [12:20<22:07,  1.58s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  16%|█▌        | 159/1000 [12:21<21:34,  1.54s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+2025-04-05 04:20:04,808 - INFO - Saved intermediate results for meta-llama/Meta-Llama-3-8B-Instruct (160/1000)
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  16%|█▌        | 160/1000 [12:26<33:42,  2.41s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  16%|█▌        | 161/1000 [12:32<51:41,  3.70s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  16%|█▌        | 162/1000 [12:39<1:04:16,  4.60s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  16%|█▋        | 163/1000 [12:46<1:12:52,  5.22s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  16%|█▋        | 164/1000 [12:52<1:18:59,  5.67s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  16%|█▋        | 165/1000 [12:59<1:23:13,  5.98s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  17%|█▋        | 166/1000 [13:06<1:26:05,  6.19s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  17%|█▋        | 167/1000 [13:12<1:24:27,  6.08s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  17%|█▋        | 168/1000 [13:18<1:26:56,  6.27s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  17%|█▋        | 169/1000 [13:25<1:28:35,  6.40s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+2025-04-05 04:21:10,979 - INFO - Saved intermediate results for meta-llama/Meta-Llama-3-8B-Instruct (170/1000)
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  17%|█▋        | 170/1000 [13:32<1:29:56,  6.50s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  17%|█▋        | 171/1000 [13:34<1:13:37,  5.33s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  17%|█▋        | 172/1000 [13:41<1:19:07,  5.73s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  17%|█▋        | 173/1000 [13:48<1:22:58,  6.02s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  17%|█▋        | 174/1000 [13:50<1:07:25,  4.90s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  18%|█▊        | 175/1000 [13:57<1:14:45,  5.44s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  18%|█▊        | 176/1000 [13:58<56:09,  4.09s/it]  Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  18%|█▊        | 177/1000 [14:04<1:06:46,  4.87s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  18%|█▊        | 178/1000 [14:05<50:02,  3.65s/it]  Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  18%|█▊        | 179/1000 [14:06<37:40,  2.75s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+2025-04-05 04:21:45,754 - INFO - Saved intermediate results for meta-llama/Meta-Llama-3-8B-Instruct (180/1000)
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  18%|█▊        | 180/1000 [14:07<29:22,  2.15s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  18%|█▊        | 181/1000 [14:13<47:49,  3.50s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  18%|█▊        | 182/1000 [14:19<56:45,  4.16s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  18%|█▊        | 183/1000 [14:23<56:43,  4.17s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  18%|█▊        | 184/1000 [14:24<42:17,  3.11s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  18%|█▊        | 185/1000 [14:30<56:52,  4.19s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  19%|█▊        | 186/1000 [14:34<54:54,  4.05s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  19%|█▊        | 187/1000 [14:36<47:57,  3.54s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  19%|█▉        | 188/1000 [14:37<36:47,  2.72s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  19%|█▉        | 189/1000 [14:40<37:58,  2.81s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+2025-04-05 04:22:23,411 - INFO - Saved intermediate results for meta-llama/Meta-Llama-3-8B-Instruct (190/1000)
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  19%|█▉        | 190/1000 [14:44<42:14,  3.13s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  19%|█▉        | 191/1000 [14:51<56:27,  4.19s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  19%|█▉        | 192/1000 [14:53<49:44,  3.69s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  19%|█▉        | 193/1000 [15:00<1:01:44,  4.59s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  19%|█▉        | 194/1000 [15:06<1:08:11,  5.08s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  20%|█▉        | 195/1000 [15:07<51:27,  3.84s/it]  Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  20%|█▉        | 196/1000 [15:13<1:00:25,  4.51s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  20%|█▉        | 197/1000 [15:14<45:36,  3.41s/it]  Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  20%|█▉        | 198/1000 [15:19<49:38,  3.71s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  20%|█▉        | 199/1000 [15:25<1:01:28,  4.61s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+2025-04-05 04:23:05,563 - INFO - Saved intermediate results for meta-llama/Meta-Llama-3-8B-Instruct (200/1000)
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  20%|██        | 200/1000 [15:26<47:19,  3.55s/it]  Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  20%|██        | 201/1000 [15:31<52:49,  3.97s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  20%|██        | 202/1000 [15:35<53:33,  4.03s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  20%|██        | 203/1000 [15:39<51:58,  3.91s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  20%|██        | 204/1000 [15:44<54:05,  4.08s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  20%|██        | 205/1000 [15:50<1:04:21,  4.86s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  21%|██        | 206/1000 [15:52<53:48,  4.07s/it]  Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  21%|██        | 207/1000 [15:57<54:19,  4.11s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  21%|██        | 208/1000 [16:03<1:04:33,  4.89s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  21%|██        | 209/1000 [16:10<1:11:35,  5.43s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+2025-04-05 04:23:54,667 - INFO - Saved intermediate results for meta-llama/Meta-Llama-3-8B-Instruct (210/1000)
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  21%|██        | 210/1000 [16:15<1:11:17,  5.41s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  21%|██        | 211/1000 [16:22<1:16:12,  5.80s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  21%|██        | 212/1000 [16:27<1:14:30,  5.67s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  21%|██▏       | 213/1000 [16:29<59:42,  4.55s/it]  Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  21%|██▏       | 214/1000 [16:36<1:06:10,  5.05s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  22%|██▏       | 215/1000 [16:38<53:41,  4.10s/it]  Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  22%|██▏       | 216/1000 [16:41<50:56,  3.90s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  22%|██▏       | 217/1000 [16:48<1:01:47,  4.73s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  22%|██▏       | 218/1000 [16:54<1:09:22,  5.32s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  22%|██▏       | 219/1000 [17:01<1:14:38,  5.73s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+2025-04-05 04:24:41,256 - INFO - Saved intermediate results for meta-llama/Meta-Llama-3-8B-Instruct (220/1000)
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  22%|██▏       | 220/1000 [17:02<55:58,  4.31s/it]  Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  22%|██▏       | 221/1000 [17:09<1:05:17,  5.03s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  22%|██▏       | 222/1000 [17:15<1:11:42,  5.53s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  22%|██▏       | 223/1000 [17:22<1:16:15,  5.89s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  22%|██▏       | 224/1000 [17:25<1:04:16,  4.97s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  22%|██▎       | 225/1000 [17:32<1:10:54,  5.49s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  23%|██▎       | 226/1000 [17:38<1:15:37,  5.86s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  23%|██▎       | 227/1000 [17:45<1:18:47,  6.12s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  23%|██▎       | 228/1000 [17:52<1:21:01,  6.30s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  23%|██▎       | 229/1000 [17:59<1:22:40,  6.43s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+2025-04-05 04:25:44,625 - INFO - Saved intermediate results for meta-llama/Meta-Llama-3-8B-Instruct (230/1000)
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  23%|██▎       | 230/1000 [18:05<1:23:56,  6.54s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  23%|██▎       | 231/1000 [18:10<1:14:48,  5.84s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  23%|██▎       | 232/1000 [18:13<1:06:37,  5.21s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  23%|██▎       | 233/1000 [18:15<52:49,  4.13s/it]  Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  23%|██▎       | 234/1000 [18:22<1:02:11,  4.87s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  24%|██▎       | 235/1000 [18:25<55:55,  4.39s/it]  Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  24%|██▎       | 236/1000 [18:31<1:04:39,  5.08s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  24%|██▎       | 237/1000 [18:38<1:10:44,  5.56s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  24%|██▍       | 238/1000 [18:44<1:10:22,  5.54s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  24%|██▍       | 239/1000 [18:50<1:14:36,  5.88s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+2025-04-05 04:26:32,381 - INFO - Saved intermediate results for meta-llama/Meta-Llama-3-8B-Instruct (240/1000)
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  24%|██▍       | 240/1000 [18:53<1:02:47,  4.96s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  24%|██▍       | 241/1000 [18:55<49:20,  3.90s/it]  Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  24%|██▍       | 242/1000 [19:01<59:48,  4.73s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  24%|██▍       | 243/1000 [19:08<1:07:13,  5.33s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  24%|██▍       | 244/1000 [19:10<55:35,  4.41s/it]  Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  24%|██▍       | 245/1000 [19:17<1:04:05,  5.09s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  25%|██▍       | 246/1000 [19:24<1:10:01,  5.57s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  25%|██▍       | 247/1000 [19:30<1:11:25,  5.69s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  25%|██▍       | 248/1000 [19:36<1:15:06,  5.99s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  25%|██▍       | 249/1000 [19:37<55:27,  4.43s/it]  Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+2025-04-05 04:27:22,806 - INFO - Saved intermediate results for meta-llama/Meta-Llama-3-8B-Instruct (250/1000)
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  25%|██▌       | 250/1000 [19:44<1:03:08,  5.05s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  25%|██▌       | 251/1000 [19:50<1:09:17,  5.55s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  25%|██▌       | 252/1000 [19:57<1:13:20,  5.88s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  25%|██▌       | 253/1000 [20:04<1:16:20,  6.13s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  25%|██▌       | 254/1000 [20:10<1:18:25,  6.31s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  26%|██▌       | 255/1000 [20:12<1:00:25,  4.87s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  26%|██▌       | 256/1000 [20:14<49:36,  4.00s/it]  Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  26%|██▌       | 257/1000 [20:21<59:35,  4.81s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  26%|██▌       | 258/1000 [20:22<46:10,  3.73s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  26%|██▌       | 259/1000 [20:28<57:05,  4.62s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+2025-04-05 04:28:11,723 - INFO - Saved intermediate results for meta-llama/Meta-Llama-3-8B-Instruct (260/1000)
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  26%|██▌       | 260/1000 [20:32<54:44,  4.44s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  26%|██▌       | 261/1000 [20:39<1:03:00,  5.12s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  26%|██▌       | 262/1000 [20:45<1:05:44,  5.34s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  26%|██▋       | 263/1000 [20:52<1:10:41,  5.76s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  26%|██▋       | 264/1000 [20:56<1:06:42,  5.44s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  26%|██▋       | 265/1000 [21:03<1:11:22,  5.83s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  27%|██▋       | 266/1000 [21:10<1:14:28,  6.09s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  27%|██▋       | 267/1000 [21:17<1:16:34,  6.27s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  27%|██▋       | 268/1000 [21:23<1:18:02,  6.40s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  27%|██▋       | 269/1000 [21:28<1:12:07,  5.92s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+2025-04-05 04:29:11,592 - INFO - Saved intermediate results for meta-llama/Meta-Llama-3-8B-Instruct (270/1000)
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  27%|██▋       | 270/1000 [21:32<1:05:58,  5.42s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  27%|██▋       | 271/1000 [21:39<1:10:34,  5.81s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  27%|██▋       | 272/1000 [21:46<1:13:42,  6.07s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  27%|██▋       | 273/1000 [21:52<1:15:53,  6.26s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  27%|██▋       | 274/1000 [21:59<1:17:23,  6.40s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  28%|██▊       | 275/1000 [22:06<1:18:28,  6.49s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  28%|██▊       | 276/1000 [22:10<1:11:15,  5.90s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  28%|██▊       | 277/1000 [22:17<1:14:00,  6.14s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  28%|██▊       | 278/1000 [22:24<1:15:57,  6.31s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  28%|██▊       | 279/1000 [22:31<1:17:20,  6.44s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+2025-04-05 04:30:11,496 - INFO - Saved intermediate results for meta-llama/Meta-Llama-3-8B-Instruct (280/1000)
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  28%|██▊       | 280/1000 [22:32<1:00:12,  5.02s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  28%|██▊       | 281/1000 [22:39<1:06:09,  5.52s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  28%|██▊       | 282/1000 [22:42<58:40,  4.90s/it]  Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  28%|██▊       | 283/1000 [22:43<44:13,  3.70s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  28%|██▊       | 284/1000 [22:44<33:52,  2.84s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  28%|██▊       | 285/1000 [22:48<35:48,  3.01s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  29%|██▊       | 286/1000 [22:48<28:27,  2.39s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  29%|██▊       | 287/1000 [22:51<28:52,  2.43s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  29%|██▉       | 288/1000 [22:52<23:19,  1.96s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  29%|██▉       | 289/1000 [22:53<19:36,  1.65s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+2025-04-05 04:30:38,843 - INFO - Saved intermediate results for meta-llama/Meta-Llama-3-8B-Instruct (290/1000)
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  29%|██▉       | 290/1000 [23:00<37:47,  3.19s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  29%|██▉       | 291/1000 [23:06<50:08,  4.24s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  29%|██▉       | 292/1000 [23:10<49:30,  4.20s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  29%|██▉       | 293/1000 [23:17<58:17,  4.95s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  29%|██▉       | 294/1000 [23:19<48:20,  4.11s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  30%|██▉       | 295/1000 [23:22<45:01,  3.83s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  30%|██▉       | 296/1000 [23:29<55:03,  4.69s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  30%|██▉       | 297/1000 [23:36<1:02:05,  5.30s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  30%|██▉       | 298/1000 [23:42<1:06:48,  5.71s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  30%|██▉       | 299/1000 [23:49<1:10:07,  6.00s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+2025-04-05 04:31:28,983 - INFO - Saved intermediate results for meta-llama/Meta-Llama-3-8B-Instruct (300/1000)
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  30%|███       | 300/1000 [23:50<50:57,  4.37s/it]  Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  30%|███       | 301/1000 [23:50<37:34,  3.22s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  30%|███       | 302/1000 [23:57<49:40,  4.27s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  30%|███       | 303/1000 [24:04<58:08,  5.00s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  30%|███       | 304/1000 [24:10<1:03:59,  5.52s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  30%|███       | 305/1000 [24:17<1:08:02,  5.87s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  31%|███       | 307/1000 [24:24<54:29,  4.72s/it]  Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  31%|███       | 309/1000 [24:31<48:08,  4.18s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+2025-04-05 04:32:11,854 - INFO - Saved intermediate results for meta-llama/Meta-Llama-3-8B-Instruct (310/1000)
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  31%|███       | 310/1000 [24:33<42:31,  3.70s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  31%|███       | 311/1000 [24:39<50:26,  4.39s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  31%|███       | 312/1000 [24:43<48:07,  4.20s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  31%|███▏      | 313/1000 [24:44<38:20,  3.35s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  31%|███▏      | 314/1000 [24:51<48:53,  4.28s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  32%|███▏      | 315/1000 [24:54<47:28,  4.16s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  32%|███▏      | 316/1000 [24:55<36:22,  3.19s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  32%|███▏      | 317/1000 [24:59<37:12,  3.27s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  32%|███▏      | 318/1000 [25:02<37:09,  3.27s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  32%|███▏      | 319/1000 [25:09<48:39,  4.29s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+2025-04-05 04:32:54,377 - INFO - Saved intermediate results for meta-llama/Meta-Llama-3-8B-Instruct (320/1000)
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  32%|███▏      | 320/1000 [25:15<55:57,  4.94s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  32%|███▏      | 321/1000 [25:22<1:01:50,  5.47s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  32%|███▏      | 322/1000 [25:22<44:04,  3.90s/it]  Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  32%|███▏      | 323/1000 [25:24<37:51,  3.36s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  32%|███▏      | 324/1000 [25:31<49:03,  4.35s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  32%|███▎      | 325/1000 [25:32<37:16,  3.31s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  33%|███▎      | 326/1000 [25:33<28:50,  2.57s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  33%|███▎      | 327/1000 [25:33<23:01,  2.05s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  33%|███▎      | 328/1000 [25:34<16:44,  1.50s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  33%|███▎      | 329/1000 [25:35<15:40,  1.40s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+2025-04-05 04:33:20,822 - INFO - Saved intermediate results for meta-llama/Meta-Llama-3-8B-Instruct (330/1000)
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  33%|███▎      | 330/1000 [25:42<33:46,  3.03s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  33%|███▎      | 331/1000 [25:48<46:01,  4.13s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  33%|███▎      | 332/1000 [25:55<53:21,  4.79s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  33%|███▎      | 333/1000 [26:01<59:38,  5.37s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  33%|███▎      | 334/1000 [26:08<1:04:02,  5.77s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  34%|███▎      | 335/1000 [26:15<1:07:02,  6.05s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  34%|███▎      | 336/1000 [26:19<1:02:24,  5.64s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  34%|███▎      | 337/1000 [26:24<57:44,  5.23s/it]  Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  34%|███▍      | 338/1000 [26:30<1:02:29,  5.66s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  34%|███▍      | 339/1000 [26:35<58:49,  5.34s/it]  Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+2025-04-05 04:34:20,992 - INFO - Saved intermediate results for meta-llama/Meta-Llama-3-8B-Instruct (340/1000)
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  34%|███▍      | 340/1000 [26:42<1:03:32,  5.78s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  34%|███▍      | 341/1000 [26:48<1:06:28,  6.05s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  34%|███▍      | 342/1000 [26:49<49:29,  4.51s/it]  Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  34%|███▍      | 343/1000 [26:50<38:02,  3.47s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  34%|███▍      | 344/1000 [26:57<48:32,  4.44s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  34%|███▍      | 345/1000 [27:01<46:25,  4.25s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  35%|███▍      | 346/1000 [27:02<36:13,  3.32s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  35%|███▍      | 347/1000 [27:05<35:49,  3.29s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  35%|███▍      | 348/1000 [27:06<28:01,  2.58s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  35%|███▍      | 349/1000 [27:07<22:22,  2.06s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+2025-04-05 04:34:53,113 - INFO - Saved intermediate results for meta-llama/Meta-Llama-3-8B-Instruct (350/1000)
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  35%|███▌      | 350/1000 [27:14<37:44,  3.48s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  35%|███▌      | 351/1000 [27:21<48:07,  4.45s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  35%|███▌      | 352/1000 [27:21<36:00,  3.33s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  35%|███▌      | 353/1000 [27:23<29:44,  2.76s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  35%|███▌      | 354/1000 [27:23<22:49,  2.12s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  36%|███▌      | 355/1000 [27:24<17:58,  1.67s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  36%|███▌      | 356/1000 [27:25<14:35,  1.36s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  36%|███▌      | 357/1000 [27:25<12:12,  1.14s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  36%|███▌      | 358/1000 [27:26<10:33,  1.01it/s]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  36%|███▌      | 359/1000 [27:27<09:28,  1.13it/s]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+2025-04-05 04:35:10,274 - INFO - Saved intermediate results for meta-llama/Meta-Llama-3-8B-Instruct (360/1000)
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  36%|███▌      | 360/1000 [27:31<21:04,  1.98s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  36%|███▌      | 361/1000 [27:38<36:10,  3.40s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  36%|███▌      | 362/1000 [27:39<28:00,  2.63s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  36%|███▋      | 363/1000 [27:45<40:52,  3.85s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  36%|███▋      | 364/1000 [27:52<49:52,  4.70s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  36%|███▋      | 365/1000 [27:53<37:29,  3.54s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  37%|███▋      | 366/1000 [27:54<29:00,  2.74s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  37%|███▋      | 367/1000 [27:54<22:38,  2.15s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  37%|███▋      | 368/1000 [27:55<18:31,  1.76s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  37%|███▋      | 369/1000 [27:57<17:12,  1.64s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+2025-04-05 04:35:36,817 - INFO - Saved intermediate results for meta-llama/Meta-Llama-3-8B-Instruct (370/1000)
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  37%|███▋      | 370/1000 [27:58<14:55,  1.42s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  37%|███▋      | 371/1000 [28:03<27:27,  2.62s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  37%|███▋      | 372/1000 [28:10<40:15,  3.85s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  37%|███▋      | 373/1000 [28:16<49:06,  4.70s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  37%|███▋      | 374/1000 [28:20<46:25,  4.45s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  38%|███▊      | 375/1000 [28:24<45:31,  4.37s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  38%|███▊      | 376/1000 [28:31<52:41,  5.07s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  38%|███▊      | 377/1000 [28:38<57:44,  5.56s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  38%|███▊      | 378/1000 [28:45<1:01:11,  5.90s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  38%|███▊      | 379/1000 [28:48<53:57,  5.21s/it]  Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+2025-04-05 04:36:34,206 - INFO - Saved intermediate results for meta-llama/Meta-Llama-3-8B-Instruct (380/1000)
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  38%|███▊      | 380/1000 [28:55<58:49,  5.69s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  38%|███▊      | 381/1000 [29:02<1:01:53,  6.00s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  38%|███▊      | 382/1000 [29:08<1:04:01,  6.22s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  38%|███▊      | 383/1000 [29:10<50:27,  4.91s/it]  Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  38%|███▊      | 384/1000 [29:17<55:58,  5.45s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  38%|███▊      | 385/1000 [29:18<40:46,  3.98s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  39%|███▊      | 386/1000 [29:20<36:58,  3.61s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  39%|███▊      | 387/1000 [29:27<46:27,  4.55s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  39%|███▉      | 388/1000 [29:34<53:05,  5.20s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  39%|███▉      | 389/1000 [29:40<57:38,  5.66s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+2025-04-05 04:37:24,032 - INFO - Saved intermediate results for meta-llama/Meta-Llama-3-8B-Instruct (390/1000)
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  39%|███▉      | 390/1000 [29:45<53:28,  5.26s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  39%|███▉      | 391/1000 [29:51<57:36,  5.67s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  39%|███▉      | 392/1000 [29:58<59:25,  5.86s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  39%|███▉      | 393/1000 [29:59<44:54,  4.44s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  39%|███▉      | 394/1000 [30:06<51:39,  5.11s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  40%|███▉      | 395/1000 [30:12<56:24,  5.59s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  40%|███▉      | 396/1000 [30:19<59:32,  5.91s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  40%|███▉      | 397/1000 [30:26<1:01:52,  6.16s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  40%|███▉      | 398/1000 [30:28<50:46,  5.06s/it]  Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  40%|███▉      | 399/1000 [30:29<38:39,  3.86s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+2025-04-05 04:38:09,197 - INFO - Saved intermediate results for meta-llama/Meta-Llama-3-8B-Instruct (400/1000)
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  40%|████      | 400/1000 [30:30<29:16,  2.93s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  40%|████      | 401/1000 [30:31<23:23,  2.34s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  40%|████      | 402/1000 [30:32<19:21,  1.94s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  40%|████      | 403/1000 [30:33<16:50,  1.69s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  40%|████      | 404/1000 [30:38<26:08,  2.63s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  40%|████      | 405/1000 [30:45<38:09,  3.85s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  41%|████      | 406/1000 [30:45<28:33,  2.88s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  41%|████      | 407/1000 [30:47<24:05,  2.44s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  41%|████      | 408/1000 [30:48<20:35,  2.09s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  41%|████      | 409/1000 [30:49<16:54,  1.72s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+2025-04-05 04:38:34,793 - INFO - Saved intermediate results for meta-llama/Meta-Llama-3-8B-Instruct (410/1000)
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  41%|████      | 410/1000 [30:56<31:59,  3.25s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  41%|████      | 411/1000 [31:02<42:03,  4.28s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  41%|████      | 412/1000 [31:09<49:02,  5.00s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  41%|████▏     | 413/1000 [31:16<53:52,  5.51s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  41%|████▏     | 414/1000 [31:22<57:15,  5.86s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  42%|████▏     | 415/1000 [31:29<59:36,  6.11s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  42%|████▏     | 416/1000 [31:36<1:01:07,  6.28s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  42%|████▏     | 417/1000 [31:42<1:02:12,  6.40s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  42%|████▏     | 418/1000 [31:49<1:02:52,  6.48s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  42%|████▏     | 419/1000 [31:56<1:03:25,  6.55s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+2025-04-05 04:39:41,799 - INFO - Saved intermediate results for meta-llama/Meta-Llama-3-8B-Instruct (420/1000)
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  42%|████▏     | 420/1000 [32:03<1:04:07,  6.63s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  42%|████▏     | 421/1000 [32:09<1:04:19,  6.67s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  42%|████▏     | 422/1000 [32:16<1:04:21,  6.68s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  42%|████▏     | 423/1000 [32:23<1:04:19,  6.69s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  42%|████▏     | 424/1000 [32:29<1:04:19,  6.70s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  42%|████▎     | 425/1000 [32:36<1:04:17,  6.71s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  43%|████▎     | 426/1000 [32:43<1:04:09,  6.71s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  43%|████▎     | 427/1000 [32:44<47:53,  5.02s/it]  Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  43%|████▎     | 428/1000 [32:45<37:08,  3.90s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  43%|████▎     | 429/1000 [32:52<45:05,  4.74s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+2025-04-05 04:40:38,016 - INFO - Saved intermediate results for meta-llama/Meta-Llama-3-8B-Instruct (430/1000)
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  43%|████▎     | 430/1000 [32:59<51:00,  5.37s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  43%|████▎     | 431/1000 [33:05<54:42,  5.77s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  43%|████▎     | 432/1000 [33:09<48:56,  5.17s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  43%|████▎     | 433/1000 [33:16<53:09,  5.62s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  43%|████▎     | 434/1000 [33:19<45:33,  4.83s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  44%|████▎     | 435/1000 [33:21<37:36,  3.99s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  44%|████▎     | 436/1000 [33:22<29:17,  3.12s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  44%|████▎     | 437/1000 [33:24<25:37,  2.73s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  44%|████▍     | 438/1000 [33:25<20:41,  2.21s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  44%|████▍     | 439/1000 [33:26<17:18,  1.85s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+2025-04-05 04:41:11,933 - INFO - Saved intermediate results for meta-llama/Meta-Llama-3-8B-Instruct (440/1000)
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  44%|████▍     | 440/1000 [33:33<31:13,  3.34s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  44%|████▍     | 441/1000 [33:38<37:35,  4.03s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  44%|████▍     | 442/1000 [33:39<29:02,  3.12s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  44%|████▍     | 443/1000 [33:43<30:12,  3.25s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  44%|████▍     | 444/1000 [33:44<23:21,  2.52s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  44%|████▍     | 445/1000 [33:50<34:53,  3.77s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  45%|████▍     | 446/1000 [33:52<28:22,  3.07s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  45%|████▍     | 447/1000 [33:53<22:27,  2.44s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  45%|████▍     | 448/1000 [33:54<19:01,  2.07s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  45%|████▍     | 449/1000 [34:00<30:00,  3.27s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+2025-04-05 04:41:45,066 - INFO - Saved intermediate results for meta-llama/Meta-Llama-3-8B-Instruct (450/1000)
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  45%|████▌     | 450/1000 [34:06<36:48,  4.02s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  45%|████▌     | 451/1000 [34:13<44:12,  4.83s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  45%|████▌     | 452/1000 [34:19<49:12,  5.39s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  45%|████▌     | 453/1000 [34:26<52:38,  5.77s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  45%|████▌     | 454/1000 [34:33<55:05,  6.05s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  46%|████▌     | 455/1000 [34:39<56:41,  6.24s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  46%|████▌     | 456/1000 [34:46<57:48,  6.38s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  46%|████▌     | 457/1000 [34:53<58:33,  6.47s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  46%|████▌     | 458/1000 [34:59<59:02,  6.54s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  46%|████▌     | 459/1000 [35:06<59:22,  6.58s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+2025-04-05 04:42:52,156 - INFO - Saved intermediate results for meta-llama/Meta-Llama-3-8B-Instruct (460/1000)
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  46%|████▌     | 460/1000 [35:13<59:57,  6.66s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  46%|████▌     | 461/1000 [35:20<59:54,  6.67s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  46%|████▌     | 462/1000 [35:26<59:55,  6.68s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  46%|████▋     | 463/1000 [35:33<59:52,  6.69s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  46%|████▋     | 464/1000 [35:34<44:09,  4.94s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  46%|████▋     | 465/1000 [35:35<33:25,  3.75s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  47%|████▋     | 466/1000 [35:36<25:56,  2.91s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  47%|████▋     | 467/1000 [35:43<35:56,  4.05s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  47%|████▋     | 468/1000 [35:49<42:37,  4.81s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  47%|████▋     | 469/1000 [35:56<47:35,  5.38s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+2025-04-05 04:43:36,131 - INFO - Saved intermediate results for meta-llama/Meta-Llama-3-8B-Instruct (470/1000)
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  47%|████▋     | 470/1000 [35:57<36:08,  4.09s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  47%|████▋     | 471/1000 [35:59<31:28,  3.57s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  47%|████▋     | 472/1000 [36:00<23:48,  2.70s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  47%|████▋     | 473/1000 [36:07<34:15,  3.90s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  47%|████▋     | 474/1000 [36:08<26:17,  3.00s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  48%|████▊     | 475/1000 [36:14<35:54,  4.10s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  48%|████▊     | 476/1000 [36:15<27:34,  3.16s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  48%|████▊     | 477/1000 [36:16<21:52,  2.51s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  48%|████▊     | 478/1000 [36:17<16:54,  1.94s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  48%|████▊     | 479/1000 [36:18<13:50,  1.59s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+2025-04-05 04:43:59,108 - INFO - Saved intermediate results for meta-llama/Meta-Llama-3-8B-Instruct (480/1000)
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  48%|████▊     | 480/1000 [36:20<15:42,  1.81s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  48%|████▊     | 481/1000 [36:21<14:09,  1.64s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  48%|████▊     | 482/1000 [36:28<27:13,  3.15s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  48%|████▊     | 483/1000 [36:34<36:20,  4.22s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  48%|████▊     | 484/1000 [36:36<28:04,  3.26s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  48%|████▊     | 485/1000 [36:39<29:07,  3.39s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  49%|████▊     | 486/1000 [36:46<37:30,  4.38s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  49%|████▊     | 487/1000 [36:47<28:39,  3.35s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  49%|████▉     | 488/1000 [36:48<23:00,  2.70s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  49%|████▉     | 489/1000 [36:55<33:14,  3.90s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+2025-04-05 04:44:40,872 - INFO - Saved intermediate results for meta-llama/Meta-Llama-3-8B-Instruct (490/1000)
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  49%|████▉     | 490/1000 [37:02<40:47,  4.80s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  49%|████▉     | 491/1000 [37:08<45:35,  5.37s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  49%|████▉     | 492/1000 [37:09<34:33,  4.08s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  49%|████▉     | 493/1000 [37:16<41:06,  4.87s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  49%|████▉     | 494/1000 [37:23<45:38,  5.41s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  50%|████▉     | 495/1000 [37:29<48:46,  5.80s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  50%|████▉     | 496/1000 [37:31<36:52,  4.39s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  50%|████▉     | 497/1000 [37:32<28:34,  3.41s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  50%|████▉     | 498/1000 [37:38<36:47,  4.40s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  50%|████▉     | 499/1000 [37:39<27:53,  3.34s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+2025-04-05 04:45:22,390 - INFO - Saved intermediate results for meta-llama/Meta-Llama-3-8B-Instruct (500/1000)
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  50%|█████     | 500/1000 [37:43<29:07,  3.50s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  50%|█████     | 501/1000 [37:44<22:41,  2.73s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  50%|█████     | 502/1000 [37:47<22:09,  2.67s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  50%|█████     | 503/1000 [37:53<32:07,  3.88s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  50%|█████     | 504/1000 [37:54<25:06,  3.04s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  50%|█████     | 505/1000 [38:01<34:10,  4.14s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  51%|█████     | 506/1000 [38:02<26:16,  3.19s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  51%|█████     | 507/1000 [38:03<20:33,  2.50s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  51%|█████     | 508/1000 [38:04<16:21,  1.99s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  51%|█████     | 509/1000 [38:05<14:11,  1.73s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+2025-04-05 04:45:45,153 - INFO - Saved intermediate results for meta-llama/Meta-Llama-3-8B-Instruct (510/1000)
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  51%|█████     | 510/1000 [38:06<12:20,  1.51s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  51%|█████     | 511/1000 [38:13<24:58,  3.06s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  51%|█████     | 512/1000 [38:19<33:51,  4.16s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  51%|█████▏    | 513/1000 [38:26<39:57,  4.92s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  51%|█████▏    | 514/1000 [38:33<44:14,  5.46s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  52%|█████▏    | 515/1000 [38:39<47:12,  5.84s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  52%|█████▏    | 516/1000 [38:46<49:10,  6.10s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  52%|█████▏    | 517/1000 [38:53<50:31,  6.28s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  52%|█████▏    | 518/1000 [39:00<51:30,  6.41s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  52%|█████▏    | 519/1000 [39:06<52:09,  6.51s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+2025-04-05 04:46:52,429 - INFO - Saved intermediate results for meta-llama/Meta-Llama-3-8B-Instruct (520/1000)
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  52%|█████▏    | 520/1000 [39:13<52:56,  6.62s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  52%|█████▏    | 521/1000 [39:14<39:01,  4.89s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  52%|█████▏    | 522/1000 [39:21<43:15,  5.43s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  52%|█████▏    | 523/1000 [39:27<46:13,  5.81s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  52%|█████▏    | 524/1000 [39:34<48:14,  6.08s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  52%|█████▎    | 525/1000 [39:35<35:13,  4.45s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  53%|█████▎    | 526/1000 [39:41<40:27,  5.12s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  53%|█████▎    | 527/1000 [39:44<34:27,  4.37s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  53%|█████▎    | 528/1000 [39:46<27:56,  3.55s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  53%|█████▎    | 529/1000 [39:47<22:02,  2.81s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+2025-04-05 04:47:31,018 - INFO - Saved intermediate results for meta-llama/Meta-Llama-3-8B-Instruct (530/1000)
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  53%|█████▎    | 530/1000 [39:52<27:03,  3.45s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  53%|█████▎    | 531/1000 [39:58<34:38,  4.43s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  53%|█████▎    | 532/1000 [40:05<39:57,  5.12s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  53%|█████▎    | 533/1000 [40:12<43:37,  5.61s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  53%|█████▎    | 534/1000 [40:19<46:08,  5.94s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  54%|█████▎    | 535/1000 [40:25<47:52,  6.18s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  54%|█████▎    | 536/1000 [40:32<49:03,  6.34s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  54%|█████▎    | 537/1000 [40:39<49:50,  6.46s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  54%|█████▍    | 538/1000 [40:40<36:45,  4.77s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  54%|█████▍    | 539/1000 [40:46<41:06,  5.35s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+2025-04-05 04:48:32,525 - INFO - Saved intermediate results for meta-llama/Meta-Llama-3-8B-Instruct (540/1000)
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  54%|█████▍    | 540/1000 [40:53<44:31,  5.81s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  54%|█████▍    | 541/1000 [41:00<46:33,  6.09s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  54%|█████▍    | 542/1000 [41:07<47:55,  6.28s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  54%|█████▍    | 543/1000 [41:13<48:44,  6.40s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  54%|█████▍    | 544/1000 [41:20<49:23,  6.50s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  55%|█████▍    | 545/1000 [41:27<49:42,  6.56s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  55%|█████▍    | 546/1000 [41:34<50:00,  6.61s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  55%|█████▍    | 547/1000 [41:39<46:17,  6.13s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  55%|█████▍    | 548/1000 [41:45<47:30,  6.31s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  55%|█████▍    | 549/1000 [41:49<41:39,  5.54s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+2025-04-05 04:49:29,334 - INFO - Saved intermediate results for meta-llama/Meta-Llama-3-8B-Instruct (550/1000)
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  55%|█████▌    | 550/1000 [41:50<31:23,  4.19s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  55%|█████▌    | 551/1000 [41:57<37:00,  4.95s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  55%|█████▌    | 552/1000 [41:58<28:14,  3.78s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  55%|█████▌    | 553/1000 [41:59<23:16,  3.12s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  55%|█████▌    | 554/1000 [42:06<31:07,  4.19s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  56%|█████▌    | 555/1000 [42:07<23:55,  3.23s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  56%|█████▌    | 556/1000 [42:08<18:46,  2.54s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  56%|█████▌    | 557/1000 [42:09<14:56,  2.02s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  56%|█████▌    | 558/1000 [42:16<25:11,  3.42s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  56%|█████▌    | 559/1000 [42:16<19:25,  2.64s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+2025-04-05 04:49:56,856 - INFO - Saved intermediate results for meta-llama/Meta-Llama-3-8B-Instruct (560/1000)
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  56%|█████▌    | 560/1000 [42:18<16:16,  2.22s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  56%|█████▌    | 561/1000 [42:24<26:03,  3.56s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  56%|█████▌    | 562/1000 [42:26<21:27,  2.94s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  56%|█████▋    | 563/1000 [42:29<21:28,  2.95s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  56%|█████▋    | 564/1000 [42:35<29:36,  4.08s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  56%|█████▋    | 565/1000 [42:38<25:19,  3.49s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  57%|█████▋    | 566/1000 [42:40<23:06,  3.19s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  57%|█████▋    | 567/1000 [42:47<30:37,  4.24s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  57%|█████▋    | 568/1000 [42:48<23:44,  3.30s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  57%|█████▋    | 569/1000 [42:55<30:58,  4.31s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+2025-04-05 04:50:40,697 - INFO - Saved intermediate results for meta-llama/Meta-Llama-3-8B-Instruct (570/1000)
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  57%|█████▋    | 570/1000 [43:01<36:27,  5.09s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  57%|█████▋    | 571/1000 [43:08<38:52,  5.44s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  57%|█████▋    | 572/1000 [43:12<36:38,  5.14s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  57%|█████▋    | 573/1000 [43:19<40:03,  5.63s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  57%|█████▋    | 574/1000 [43:24<39:00,  5.49s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  57%|█████▊    | 575/1000 [43:25<28:32,  4.03s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  58%|█████▊    | 576/1000 [43:29<28:54,  4.09s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  58%|█████▊    | 577/1000 [43:34<30:32,  4.33s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  58%|█████▊    | 578/1000 [43:38<29:46,  4.23s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  58%|█████▊    | 579/1000 [43:43<31:25,  4.48s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+2025-04-05 04:51:25,247 - INFO - Saved intermediate results for meta-llama/Meta-Llama-3-8B-Instruct (580/1000)
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  58%|█████▊    | 580/1000 [43:46<28:28,  4.07s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  58%|█████▊    | 581/1000 [43:51<29:55,  4.29s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  58%|█████▊    | 582/1000 [43:57<34:52,  5.01s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  58%|█████▊    | 583/1000 [44:00<30:09,  4.34s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  58%|█████▊    | 584/1000 [44:06<32:02,  4.62s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  58%|█████▊    | 585/1000 [44:10<32:00,  4.63s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  59%|█████▊    | 586/1000 [44:17<36:10,  5.24s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  59%|█████▊    | 587/1000 [44:20<32:04,  4.66s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  59%|█████▉    | 588/1000 [44:22<26:31,  3.86s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  59%|█████▉    | 589/1000 [44:29<32:17,  4.71s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+2025-04-05 04:52:10,113 - INFO - Saved intermediate results for meta-llama/Meta-Llama-3-8B-Instruct (590/1000)
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  59%|█████▉    | 590/1000 [44:31<26:38,  3.90s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  59%|█████▉    | 591/1000 [44:38<32:18,  4.74s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  59%|█████▉    | 592/1000 [44:44<36:12,  5.32s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  59%|█████▉    | 593/1000 [44:51<38:57,  5.74s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  59%|█████▉    | 594/1000 [44:58<40:43,  6.02s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  60%|█████▉    | 595/1000 [45:04<42:02,  6.23s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  60%|█████▉    | 596/1000 [45:06<32:00,  4.75s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  60%|█████▉    | 597/1000 [45:12<35:46,  5.33s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  60%|█████▉    | 598/1000 [45:19<38:25,  5.73s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  60%|█████▉    | 599/1000 [45:21<29:59,  4.49s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+2025-04-05 04:53:02,988 - INFO - Saved intermediate results for meta-llama/Meta-Llama-3-8B-Instruct (600/1000)
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  60%|██████    | 600/1000 [45:24<27:14,  4.09s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  60%|██████    | 601/1000 [45:30<32:19,  4.86s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  60%|██████    | 602/1000 [45:31<24:35,  3.71s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  60%|██████    | 603/1000 [45:38<30:28,  4.61s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  60%|██████    | 604/1000 [45:45<34:30,  5.23s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  60%|██████    | 605/1000 [45:52<37:21,  5.68s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  61%|██████    | 606/1000 [45:53<29:02,  4.42s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  61%|██████    | 607/1000 [45:54<21:24,  3.27s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  61%|██████    | 608/1000 [45:56<20:11,  3.09s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  61%|██████    | 609/1000 [46:03<27:04,  4.16s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+2025-04-05 04:53:49,035 - INFO - Saved intermediate results for meta-llama/Meta-Llama-3-8B-Instruct (610/1000)
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  61%|██████    | 610/1000 [46:10<32:18,  4.97s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  61%|██████    | 611/1000 [46:16<35:33,  5.48s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  61%|██████    | 612/1000 [46:23<37:43,  5.83s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  61%|██████▏   | 613/1000 [46:30<39:16,  6.09s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  61%|██████▏   | 614/1000 [46:36<40:18,  6.26s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  62%|██████▏   | 615/1000 [46:43<40:58,  6.39s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  62%|██████▏   | 616/1000 [46:50<41:27,  6.48s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  62%|██████▏   | 617/1000 [46:57<41:48,  6.55s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  62%|██████▏   | 618/1000 [47:03<41:57,  6.59s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  62%|██████▏   | 619/1000 [47:10<42:04,  6.63s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+2025-04-05 04:54:56,051 - INFO - Saved intermediate results for meta-llama/Meta-Llama-3-8B-Instruct (620/1000)
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  62%|██████▏   | 620/1000 [47:17<42:23,  6.69s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  62%|██████▏   | 621/1000 [47:24<42:17,  6.70s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  62%|██████▏   | 622/1000 [47:30<42:11,  6.70s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  62%|██████▏   | 623/1000 [47:36<40:08,  6.39s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  62%|██████▏   | 624/1000 [47:38<32:02,  5.11s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  62%|██████▎   | 625/1000 [47:45<34:50,  5.58s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  63%|██████▎   | 626/1000 [47:48<30:32,  4.90s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  63%|██████▎   | 627/1000 [47:49<23:37,  3.80s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  63%|██████▎   | 628/1000 [47:53<22:49,  3.68s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  63%|██████▎   | 629/1000 [47:55<20:23,  3.30s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+2025-04-05 04:55:41,152 - INFO - Saved intermediate results for meta-llama/Meta-Llama-3-8B-Instruct (630/1000)
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  63%|██████▎   | 630/1000 [48:02<26:57,  4.37s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  63%|██████▎   | 631/1000 [48:09<31:05,  5.06s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  63%|██████▎   | 632/1000 [48:13<29:52,  4.87s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  63%|██████▎   | 633/1000 [48:18<30:51,  5.04s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  63%|██████▎   | 634/1000 [48:19<23:14,  3.81s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  64%|██████▎   | 635/1000 [48:26<28:25,  4.67s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  64%|██████▎   | 636/1000 [48:33<32:00,  5.28s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  64%|██████▎   | 637/1000 [48:34<24:30,  4.05s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  64%|██████▍   | 638/1000 [48:35<18:53,  3.13s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  64%|██████▍   | 639/1000 [48:36<14:21,  2.39s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+2025-04-05 04:56:17,385 - INFO - Saved intermediate results for meta-llama/Meta-Llama-3-8B-Instruct (640/1000)
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  64%|██████▍   | 640/1000 [48:38<14:38,  2.44s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  64%|██████▍   | 641/1000 [48:45<22:09,  3.70s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  64%|██████▍   | 642/1000 [48:45<16:37,  2.79s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  64%|██████▍   | 643/1000 [48:46<12:45,  2.14s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  64%|██████▍   | 644/1000 [48:51<18:18,  3.09s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  64%|██████▍   | 645/1000 [48:58<24:37,  4.16s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  65%|██████▍   | 646/1000 [48:59<18:22,  3.11s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  65%|██████▍   | 647/1000 [48:59<13:58,  2.37s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  65%|██████▍   | 648/1000 [49:00<11:22,  1.94s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  65%|██████▍   | 649/1000 [49:01<09:37,  1.64s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+2025-04-05 04:56:43,511 - INFO - Saved intermediate results for meta-llama/Meta-Llama-3-8B-Instruct (650/1000)
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  65%|██████▌   | 650/1000 [49:04<12:00,  2.06s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  65%|██████▌   | 651/1000 [49:11<20:02,  3.44s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  65%|██████▌   | 652/1000 [49:18<25:35,  4.41s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  65%|██████▌   | 653/1000 [49:24<29:29,  5.10s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  65%|██████▌   | 654/1000 [49:31<32:09,  5.58s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  66%|██████▌   | 655/1000 [49:32<24:05,  4.19s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  66%|██████▌   | 656/1000 [49:35<22:37,  3.95s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  66%|██████▌   | 657/1000 [49:36<17:09,  3.00s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  66%|██████▌   | 658/1000 [49:37<14:08,  2.48s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  66%|██████▌   | 659/1000 [49:38<11:40,  2.05s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+2025-04-05 04:57:24,563 - INFO - Saved intermediate results for meta-llama/Meta-Llama-3-8B-Instruct (660/1000)
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  66%|██████▌   | 660/1000 [49:45<19:48,  3.49s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  66%|██████▌   | 661/1000 [49:52<25:06,  4.45s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  66%|██████▌   | 662/1000 [49:53<19:36,  3.48s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  66%|██████▋   | 663/1000 [49:54<15:00,  2.67s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  66%|██████▋   | 664/1000 [50:01<21:41,  3.87s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  66%|██████▋   | 665/1000 [50:07<26:17,  4.71s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  67%|██████▋   | 666/1000 [50:08<19:47,  3.56s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  67%|██████▋   | 667/1000 [50:11<18:08,  3.27s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  67%|██████▋   | 668/1000 [50:12<13:50,  2.50s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  67%|██████▋   | 669/1000 [50:12<11:14,  2.04s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+2025-04-05 04:57:52,703 - INFO - Saved intermediate results for meta-llama/Meta-Llama-3-8B-Instruct (670/1000)
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  67%|██████▋   | 670/1000 [50:13<09:29,  1.73s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  67%|██████▋   | 671/1000 [50:19<15:46,  2.88s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  67%|██████▋   | 672/1000 [50:26<21:57,  4.02s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  67%|██████▋   | 673/1000 [50:32<26:12,  4.81s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  67%|██████▋   | 674/1000 [50:39<29:11,  5.37s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  68%|██████▊   | 675/1000 [50:45<29:20,  5.42s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  68%|██████▊   | 676/1000 [50:51<31:17,  5.80s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  68%|██████▊   | 677/1000 [50:58<32:36,  6.06s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  68%|██████▊   | 678/1000 [51:05<33:27,  6.24s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  68%|██████▊   | 679/1000 [51:10<32:28,  6.07s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+2025-04-05 04:58:56,370 - INFO - Saved intermediate results for meta-llama/Meta-Llama-3-8B-Instruct (680/1000)
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  68%|██████▊   | 680/1000 [51:17<33:40,  6.31s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  68%|██████▊   | 681/1000 [51:20<28:41,  5.40s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  68%|██████▊   | 682/1000 [51:22<23:10,  4.37s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  68%|██████▊   | 683/1000 [51:23<17:49,  3.37s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  68%|██████▊   | 684/1000 [51:30<22:59,  4.37s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  68%|██████▊   | 685/1000 [51:33<21:20,  4.07s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  69%|██████▊   | 686/1000 [51:37<20:08,  3.85s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  69%|██████▊   | 687/1000 [51:38<16:13,  3.11s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  69%|██████▉   | 688/1000 [51:42<16:59,  3.27s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  69%|██████▉   | 689/1000 [51:46<18:10,  3.51s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+2025-04-05 04:59:26,672 - INFO - Saved intermediate results for meta-llama/Meta-Llama-3-8B-Instruct (690/1000)
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  69%|██████▉   | 690/1000 [51:47<15:04,  2.92s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  69%|██████▉   | 691/1000 [51:54<20:49,  4.04s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  69%|██████▉   | 692/1000 [51:58<20:10,  3.93s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  69%|██████▉   | 693/1000 [52:01<18:46,  3.67s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  69%|██████▉   | 694/1000 [52:08<23:19,  4.57s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  70%|██████▉   | 695/1000 [52:14<26:28,  5.21s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  70%|██████▉   | 696/1000 [52:18<24:52,  4.91s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  70%|██████▉   | 697/1000 [52:19<18:13,  3.61s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  70%|██████▉   | 698/1000 [52:26<22:47,  4.53s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  70%|██████▉   | 699/1000 [52:27<17:12,  3.43s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+2025-04-05 05:00:12,642 - INFO - Saved intermediate results for meta-llama/Meta-Llama-3-8B-Instruct (700/1000)
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  70%|███████   | 700/1000 [52:33<22:18,  4.46s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  70%|███████   | 701/1000 [52:40<25:34,  5.13s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  70%|███████   | 702/1000 [52:47<27:47,  5.60s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  70%|███████   | 703/1000 [52:53<29:17,  5.92s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  70%|███████   | 704/1000 [53:00<30:20,  6.15s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  70%|███████   | 705/1000 [53:07<31:02,  6.31s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  71%|███████   | 706/1000 [53:13<31:27,  6.42s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  71%|███████   | 707/1000 [53:20<31:43,  6.50s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  71%|███████   | 708/1000 [53:27<31:54,  6.56s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  71%|███████   | 709/1000 [53:34<31:58,  6.59s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+2025-04-05 05:01:19,691 - INFO - Saved intermediate results for meta-llama/Meta-Llama-3-8B-Instruct (710/1000)
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  71%|███████   | 710/1000 [53:40<32:18,  6.69s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  71%|███████   | 711/1000 [53:47<32:09,  6.68s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  71%|███████   | 712/1000 [53:54<32:02,  6.68s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  71%|███████▏  | 713/1000 [54:00<31:57,  6.68s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  71%|███████▏  | 714/1000 [54:01<23:30,  4.93s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  72%|███████▏  | 715/1000 [54:07<23:51,  5.02s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  72%|███████▏  | 716/1000 [54:08<19:18,  4.08s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  72%|███████▏  | 717/1000 [54:15<22:52,  4.85s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  72%|███████▏  | 718/1000 [54:17<18:47,  4.00s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  72%|███████▏  | 719/1000 [54:24<22:30,  4.80s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+2025-04-05 05:02:07,728 - INFO - Saved intermediate results for meta-llama/Meta-Llama-3-8B-Instruct (720/1000)
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  72%|███████▏  | 720/1000 [54:28<22:16,  4.77s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  72%|███████▏  | 721/1000 [54:35<24:51,  5.35s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  72%|███████▏  | 722/1000 [54:42<26:35,  5.74s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  72%|███████▏  | 723/1000 [54:48<27:45,  6.01s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  72%|███████▏  | 724/1000 [54:55<28:33,  6.21s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  72%|███████▎  | 725/1000 [55:02<29:05,  6.35s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  73%|███████▎  | 726/1000 [55:06<25:35,  5.60s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  73%|███████▎  | 727/1000 [55:08<21:31,  4.73s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  73%|███████▎  | 728/1000 [55:14<22:07,  4.88s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  73%|███████▎  | 729/1000 [55:17<19:54,  4.41s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+2025-04-05 05:03:02,321 - INFO - Saved intermediate results for meta-llama/Meta-Llama-3-8B-Instruct (730/1000)
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  73%|███████▎  | 730/1000 [55:23<22:12,  4.94s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  73%|███████▎  | 731/1000 [55:30<24:31,  5.47s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  73%|███████▎  | 732/1000 [55:36<26:04,  5.84s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  73%|███████▎  | 733/1000 [55:42<25:58,  5.84s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  73%|███████▎  | 734/1000 [55:47<23:49,  5.37s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  74%|███████▎  | 735/1000 [55:53<24:29,  5.54s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  74%|███████▎  | 736/1000 [55:59<25:56,  5.89s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  74%|███████▎  | 737/1000 [56:02<21:57,  5.01s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  74%|███████▍  | 738/1000 [56:03<16:25,  3.76s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  74%|███████▍  | 739/1000 [56:07<16:43,  3.84s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+2025-04-05 05:03:49,699 - INFO - Saved intermediate results for meta-llama/Meta-Llama-3-8B-Instruct (740/1000)
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  74%|███████▍  | 740/1000 [56:10<16:01,  3.70s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  74%|███████▍  | 741/1000 [56:17<19:48,  4.59s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  74%|███████▍  | 742/1000 [56:24<22:28,  5.23s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  74%|███████▍  | 743/1000 [56:31<24:16,  5.67s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  74%|███████▍  | 744/1000 [56:33<19:44,  4.63s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  74%|███████▍  | 745/1000 [56:38<20:35,  4.84s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  75%|███████▍  | 746/1000 [56:45<22:49,  5.39s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  75%|███████▍  | 747/1000 [56:51<24:22,  5.78s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  75%|███████▍  | 748/1000 [56:58<25:26,  6.06s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  75%|███████▍  | 749/1000 [57:02<22:42,  5.43s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+2025-04-05 05:04:43,244 - INFO - Saved intermediate results for meta-llama/Meta-Llama-3-8B-Instruct (750/1000)
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  75%|███████▌  | 750/1000 [57:04<18:12,  4.37s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  75%|███████▌  | 751/1000 [57:11<20:59,  5.06s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  75%|███████▌  | 752/1000 [57:17<22:55,  5.55s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  75%|███████▌  | 753/1000 [57:19<18:16,  4.44s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  75%|███████▌  | 754/1000 [57:26<20:59,  5.12s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  76%|███████▌  | 755/1000 [57:33<22:48,  5.59s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  76%|███████▌  | 756/1000 [57:36<20:25,  5.02s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  76%|███████▌  | 757/1000 [57:43<22:22,  5.52s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  76%|███████▌  | 758/1000 [57:50<23:42,  5.88s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  76%|███████▌  | 759/1000 [57:56<24:36,  6.13s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+2025-04-05 05:05:42,578 - INFO - Saved intermediate results for meta-llama/Meta-Llama-3-8B-Instruct (760/1000)
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  76%|███████▌  | 760/1000 [58:03<25:28,  6.37s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  76%|███████▌  | 761/1000 [58:10<25:43,  6.46s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  76%|███████▌  | 762/1000 [58:17<25:55,  6.53s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  76%|███████▋  | 763/1000 [58:18<19:18,  4.89s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  76%|███████▋  | 764/1000 [58:22<18:37,  4.73s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  76%|███████▋  | 765/1000 [58:29<20:52,  5.33s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  77%|███████▋  | 766/1000 [58:32<17:50,  4.57s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  77%|███████▋  | 767/1000 [58:37<18:19,  4.72s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  77%|███████▋  | 768/1000 [58:40<16:01,  4.15s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  77%|███████▋  | 769/1000 [58:40<12:06,  3.15s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+2025-04-05 05:06:26,518 - INFO - Saved intermediate results for meta-llama/Meta-Llama-3-8B-Instruct (770/1000)
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  77%|███████▋  | 770/1000 [58:47<16:24,  4.28s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  77%|███████▋  | 771/1000 [58:54<19:04,  5.00s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  77%|███████▋  | 772/1000 [59:01<20:52,  5.50s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  77%|███████▋  | 773/1000 [59:07<22:07,  5.85s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  77%|███████▋  | 774/1000 [59:14<22:57,  6.10s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  78%|███████▊  | 775/1000 [59:21<23:31,  6.27s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  78%|███████▊  | 776/1000 [59:27<23:51,  6.39s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  78%|███████▊  | 777/1000 [59:31<21:14,  5.71s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  78%|███████▊  | 778/1000 [59:38<22:12,  6.00s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  78%|███████▊  | 779/1000 [59:45<22:50,  6.20s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+2025-04-05 05:07:30,911 - INFO - Saved intermediate results for meta-llama/Meta-Llama-3-8B-Instruct (780/1000)
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  78%|███████▊  | 780/1000 [59:52<23:30,  6.41s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  78%|███████▊  | 781/1000 [59:58<23:42,  6.50s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  78%|███████▊  | 782/1000 [1:00:05<23:50,  6.56s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  78%|███████▊  | 783/1000 [1:00:12<23:53,  6.61s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  78%|███████▊  | 784/1000 [1:00:13<17:58,  4.99s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  78%|███████▊  | 785/1000 [1:00:20<19:42,  5.50s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  79%|███████▊  | 786/1000 [1:00:26<20:54,  5.86s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  79%|███████▊  | 787/1000 [1:00:33<21:43,  6.12s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  79%|███████▉  | 788/1000 [1:00:40<22:14,  6.30s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  79%|███████▉  | 789/1000 [1:00:44<20:03,  5.70s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+2025-04-05 05:08:30,384 - INFO - Saved intermediate results for meta-llama/Meta-Llama-3-8B-Instruct (790/1000)
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  79%|███████▉  | 790/1000 [1:00:51<21:17,  6.08s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  79%|███████▉  | 791/1000 [1:00:58<21:51,  6.27s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  79%|███████▉  | 792/1000 [1:00:59<16:28,  4.75s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  79%|███████▉  | 793/1000 [1:01:06<18:23,  5.33s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  79%|███████▉  | 794/1000 [1:01:08<14:39,  4.27s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  80%|███████▉  | 795/1000 [1:01:14<16:55,  4.95s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  80%|███████▉  | 796/1000 [1:01:21<18:37,  5.48s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  80%|███████▉  | 797/1000 [1:01:22<14:20,  4.24s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  80%|███████▉  | 798/1000 [1:01:29<16:44,  4.97s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  80%|███████▉  | 799/1000 [1:01:35<18:22,  5.48s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+2025-04-05 05:09:21,679 - INFO - Saved intermediate results for meta-llama/Meta-Llama-3-8B-Instruct (800/1000)
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  80%|████████  | 800/1000 [1:01:42<19:44,  5.92s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  80%|████████  | 801/1000 [1:01:49<20:25,  6.16s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  80%|████████  | 802/1000 [1:01:56<20:53,  6.33s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  80%|████████  | 803/1000 [1:02:03<21:08,  6.44s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  80%|████████  | 804/1000 [1:02:09<21:18,  6.52s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  80%|████████  | 805/1000 [1:02:13<18:25,  5.67s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  81%|████████  | 806/1000 [1:02:14<14:10,  4.38s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  81%|████████  | 807/1000 [1:02:21<16:19,  5.08s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  81%|████████  | 808/1000 [1:02:28<17:46,  5.55s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  81%|████████  | 809/1000 [1:02:34<18:46,  5.90s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+2025-04-05 05:10:18,056 - INFO - Saved intermediate results for meta-llama/Meta-Llama-3-8B-Instruct (810/1000)
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  81%|████████  | 810/1000 [1:02:39<17:15,  5.45s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  81%|████████  | 811/1000 [1:02:45<17:28,  5.55s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  81%|████████  | 812/1000 [1:02:47<14:46,  4.72s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  81%|████████▏ | 813/1000 [1:02:50<12:17,  3.94s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  81%|████████▏ | 814/1000 [1:02:56<14:45,  4.76s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  82%|████████▏ | 815/1000 [1:03:03<16:29,  5.35s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  82%|████████▏ | 816/1000 [1:03:09<17:10,  5.60s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  82%|████████▏ | 817/1000 [1:03:16<18:05,  5.93s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  82%|████████▏ | 818/1000 [1:03:17<13:34,  4.47s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  82%|████████▏ | 819/1000 [1:03:21<13:21,  4.43s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+2025-04-05 05:11:07,367 - INFO - Saved intermediate results for meta-llama/Meta-Llama-3-8B-Instruct (820/1000)
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  82%|████████▏ | 820/1000 [1:03:28<15:33,  5.18s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  82%|████████▏ | 821/1000 [1:03:35<16:48,  5.64s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  82%|████████▏ | 822/1000 [1:03:37<13:34,  4.58s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  82%|████████▏ | 823/1000 [1:03:44<15:21,  5.21s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  82%|████████▏ | 824/1000 [1:03:50<16:34,  5.65s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  82%|████████▎ | 825/1000 [1:03:57<17:23,  5.96s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  83%|████████▎ | 826/1000 [1:04:04<17:55,  6.18s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  83%|████████▎ | 827/1000 [1:04:10<18:16,  6.34s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  83%|████████▎ | 828/1000 [1:04:17<18:27,  6.44s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  83%|████████▎ | 829/1000 [1:04:19<14:41,  5.15s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+2025-04-05 05:12:05,403 - INFO - Saved intermediate results for meta-llama/Meta-Llama-3-8B-Instruct (830/1000)
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  83%|████████▎ | 830/1000 [1:04:26<16:08,  5.70s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  83%|████████▎ | 831/1000 [1:04:33<16:52,  5.99s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  83%|████████▎ | 832/1000 [1:04:40<17:21,  6.20s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  83%|████████▎ | 833/1000 [1:04:45<16:45,  6.02s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  83%|████████▎ | 834/1000 [1:04:46<12:28,  4.51s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  84%|████████▎ | 835/1000 [1:04:48<10:03,  3.66s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  84%|████████▎ | 836/1000 [1:04:49<08:07,  2.97s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  84%|████████▎ | 837/1000 [1:04:56<11:05,  4.08s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  84%|████████▍ | 838/1000 [1:05:03<13:08,  4.86s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  84%|████████▍ | 839/1000 [1:05:04<10:00,  3.73s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+2025-04-05 05:12:49,787 - INFO - Saved intermediate results for meta-llama/Meta-Llama-3-8B-Instruct (840/1000)
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  84%|████████▍ | 840/1000 [1:05:11<12:31,  4.70s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  84%|████████▍ | 841/1000 [1:05:17<14:01,  5.29s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  84%|████████▍ | 842/1000 [1:05:24<15:03,  5.72s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  84%|████████▍ | 843/1000 [1:05:26<12:09,  4.64s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  84%|████████▍ | 844/1000 [1:05:28<09:51,  3.79s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  84%|████████▍ | 845/1000 [1:05:35<12:00,  4.65s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  85%|████████▍ | 846/1000 [1:05:35<09:02,  3.52s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  85%|████████▍ | 847/1000 [1:05:42<11:23,  4.47s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  85%|████████▍ | 848/1000 [1:05:46<11:04,  4.37s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  85%|████████▍ | 849/1000 [1:05:53<12:43,  5.06s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+2025-04-05 05:13:39,128 - INFO - Saved intermediate results for meta-llama/Meta-Llama-3-8B-Instruct (850/1000)
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  85%|████████▌ | 850/1000 [1:06:00<14:05,  5.64s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  85%|████████▌ | 851/1000 [1:06:07<14:46,  5.95s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  85%|████████▌ | 852/1000 [1:06:13<15:11,  6.16s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  85%|████████▌ | 853/1000 [1:06:16<12:15,  5.00s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  85%|████████▌ | 854/1000 [1:06:22<13:24,  5.51s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  86%|████████▌ | 855/1000 [1:06:29<14:09,  5.86s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  86%|████████▌ | 856/1000 [1:06:30<10:21,  4.32s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  86%|████████▌ | 857/1000 [1:06:36<11:59,  5.03s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  86%|████████▌ | 858/1000 [1:06:43<13:02,  5.51s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  86%|████████▌ | 859/1000 [1:06:44<10:04,  4.29s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+2025-04-05 05:14:30,573 - INFO - Saved intermediate results for meta-llama/Meta-Llama-3-8B-Instruct (860/1000)
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  86%|████████▌ | 860/1000 [1:06:51<11:52,  5.09s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  86%|████████▌ | 861/1000 [1:06:58<12:55,  5.58s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  86%|████████▌ | 862/1000 [1:07:05<13:35,  5.91s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  86%|████████▋ | 863/1000 [1:07:11<14:02,  6.15s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  86%|████████▋ | 864/1000 [1:07:18<14:18,  6.31s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  86%|████████▋ | 865/1000 [1:07:25<14:27,  6.43s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  87%|████████▋ | 866/1000 [1:07:32<14:31,  6.51s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  87%|████████▋ | 867/1000 [1:07:38<14:32,  6.56s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  87%|████████▋ | 868/1000 [1:07:45<14:31,  6.60s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  87%|████████▋ | 869/1000 [1:07:52<14:26,  6.62s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+2025-04-05 05:15:37,755 - INFO - Saved intermediate results for meta-llama/Meta-Llama-3-8B-Instruct (870/1000)
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  87%|████████▋ | 870/1000 [1:07:59<14:33,  6.72s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  87%|████████▋ | 871/1000 [1:08:05<14:26,  6.72s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  87%|████████▋ | 872/1000 [1:08:12<14:18,  6.71s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  87%|████████▋ | 873/1000 [1:08:15<11:41,  5.52s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  87%|████████▋ | 874/1000 [1:08:21<12:19,  5.87s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  88%|████████▊ | 875/1000 [1:08:28<12:44,  6.12s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  88%|████████▊ | 876/1000 [1:08:29<09:24,  4.56s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  88%|████████▊ | 877/1000 [1:08:36<10:39,  5.20s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  88%|████████▊ | 878/1000 [1:08:37<07:59,  3.93s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  88%|████████▊ | 879/1000 [1:08:43<09:35,  4.76s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+2025-04-05 05:16:29,553 - INFO - Saved intermediate results for meta-llama/Meta-Llama-3-8B-Instruct (880/1000)
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  88%|████████▊ | 880/1000 [1:08:50<10:51,  5.43s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  88%|████████▊ | 881/1000 [1:08:51<07:57,  4.01s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  88%|████████▊ | 882/1000 [1:08:52<05:55,  3.02s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  88%|████████▊ | 883/1000 [1:08:58<08:01,  4.11s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  88%|████████▊ | 884/1000 [1:08:59<05:56,  3.07s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  88%|████████▊ | 885/1000 [1:09:06<07:58,  4.16s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  89%|████████▊ | 886/1000 [1:09:06<05:54,  3.11s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  89%|████████▊ | 887/1000 [1:09:13<07:51,  4.17s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  89%|████████▉ | 888/1000 [1:09:20<09:10,  4.92s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  89%|████████▉ | 889/1000 [1:09:20<06:42,  3.63s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+2025-04-05 05:17:00,558 - INFO - Saved intermediate results for meta-llama/Meta-Llama-3-8B-Instruct (890/1000)
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  89%|████████▉ | 890/1000 [1:09:21<05:12,  2.84s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  89%|████████▉ | 891/1000 [1:09:28<07:16,  4.00s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  89%|████████▉ | 892/1000 [1:09:35<08:40,  4.82s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  89%|████████▉ | 893/1000 [1:09:41<09:35,  5.38s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  89%|████████▉ | 894/1000 [1:09:48<10:12,  5.78s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  90%|████████▉ | 895/1000 [1:09:55<10:35,  6.05s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  90%|████████▉ | 896/1000 [1:09:57<08:38,  4.99s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  90%|████████▉ | 897/1000 [1:10:04<09:26,  5.50s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  90%|████████▉ | 898/1000 [1:10:11<09:56,  5.85s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  90%|████████▉ | 899/1000 [1:10:17<10:15,  6.10s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+2025-04-05 05:18:03,605 - INFO - Saved intermediate results for meta-llama/Meta-Llama-3-8B-Instruct (900/1000)
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  90%|█████████ | 900/1000 [1:10:24<10:36,  6.36s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  90%|█████████ | 901/1000 [1:10:31<10:39,  6.46s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  90%|█████████ | 902/1000 [1:10:38<10:39,  6.52s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  90%|█████████ | 903/1000 [1:10:44<10:36,  6.57s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  90%|█████████ | 904/1000 [1:10:51<10:33,  6.60s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  90%|█████████ | 905/1000 [1:10:58<10:29,  6.62s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  91%|█████████ | 906/1000 [1:11:04<10:24,  6.64s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  91%|█████████ | 907/1000 [1:11:11<10:19,  6.66s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  91%|█████████ | 908/1000 [1:11:16<09:21,  6.11s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  91%|█████████ | 909/1000 [1:11:23<09:31,  6.28s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+2025-04-05 05:19:08,853 - INFO - Saved intermediate results for meta-llama/Meta-Llama-3-8B-Instruct (910/1000)
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  91%|█████████ | 910/1000 [1:11:30<09:44,  6.49s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  91%|█████████ | 911/1000 [1:11:33<08:21,  5.63s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  91%|█████████ | 912/1000 [1:11:40<08:42,  5.94s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  91%|█████████▏| 913/1000 [1:11:41<06:23,  4.41s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  91%|█████████▏| 914/1000 [1:11:43<05:32,  3.87s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  92%|█████████▏| 915/1000 [1:11:48<05:45,  4.07s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  92%|█████████▏| 916/1000 [1:11:51<05:30,  3.94s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  92%|█████████▏| 917/1000 [1:11:53<04:15,  3.08s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  92%|█████████▏| 918/1000 [1:11:59<05:41,  4.17s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  92%|█████████▏| 919/1000 [1:12:00<04:17,  3.18s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+2025-04-05 05:19:41,725 - INFO - Saved intermediate results for meta-llama/Meta-Llama-3-8B-Instruct (920/1000)
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  92%|█████████▏| 920/1000 [1:12:02<03:53,  2.92s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  92%|█████████▏| 921/1000 [1:12:03<02:56,  2.24s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  92%|█████████▏| 922/1000 [1:12:04<02:17,  1.76s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  92%|█████████▏| 923/1000 [1:12:05<01:53,  1.47s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  92%|█████████▏| 924/1000 [1:12:09<02:52,  2.27s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  92%|█████████▎| 925/1000 [1:12:09<02:14,  1.79s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  93%|█████████▎| 926/1000 [1:12:16<04:00,  3.25s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  93%|█████████▎| 927/1000 [1:12:17<03:00,  2.47s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  93%|█████████▎| 928/1000 [1:12:17<02:18,  1.92s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  93%|█████████▎| 929/1000 [1:12:18<01:48,  1.53s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+2025-04-05 05:20:04,160 - INFO - Saved intermediate results for meta-llama/Meta-Llama-3-8B-Instruct (930/1000)
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  93%|█████████▎| 930/1000 [1:12:25<03:41,  3.17s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  93%|█████████▎| 931/1000 [1:12:32<04:51,  4.23s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  93%|█████████▎| 932/1000 [1:12:38<05:37,  4.97s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  93%|█████████▎| 933/1000 [1:12:45<06:07,  5.48s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  93%|█████████▎| 934/1000 [1:12:52<06:25,  5.84s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  94%|█████████▎| 935/1000 [1:12:52<04:37,  4.26s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  94%|█████████▎| 936/1000 [1:12:59<05:19,  4.99s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  94%|█████████▎| 937/1000 [1:13:06<05:46,  5.51s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  94%|█████████▍| 938/1000 [1:13:12<06:03,  5.86s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  94%|█████████▍| 939/1000 [1:13:19<06:11,  6.10s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+2025-04-05 05:21:01,251 - INFO - Saved intermediate results for meta-llama/Meta-Llama-3-8B-Instruct (940/1000)
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  94%|█████████▍| 940/1000 [1:13:22<05:10,  5.18s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  94%|█████████▍| 941/1000 [1:13:23<03:51,  3.92s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  94%|█████████▍| 942/1000 [1:13:24<03:00,  3.11s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  94%|█████████▍| 943/1000 [1:13:25<02:17,  2.41s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  94%|█████████▍| 944/1000 [1:13:26<01:50,  1.98s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  94%|█████████▍| 945/1000 [1:13:27<01:29,  1.63s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  95%|█████████▍| 946/1000 [1:13:28<01:29,  1.65s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  95%|█████████▍| 947/1000 [1:13:29<01:14,  1.41s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  95%|█████████▍| 948/1000 [1:13:30<01:03,  1.22s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  95%|█████████▍| 949/1000 [1:13:31<00:56,  1.10s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+2025-04-05 05:21:11,217 - INFO - Saved intermediate results for meta-llama/Meta-Llama-3-8B-Instruct (950/1000)
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  95%|█████████▌| 950/1000 [1:13:32<00:54,  1.09s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  95%|█████████▌| 951/1000 [1:13:39<02:15,  2.77s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  95%|█████████▌| 952/1000 [1:13:41<02:04,  2.59s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  95%|█████████▌| 953/1000 [1:13:47<02:59,  3.81s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  95%|█████████▌| 954/1000 [1:13:54<03:35,  4.67s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  96%|█████████▌| 955/1000 [1:14:01<03:57,  5.27s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  96%|█████████▌| 956/1000 [1:14:04<03:27,  4.71s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  96%|█████████▌| 957/1000 [1:14:11<03:47,  5.30s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  96%|█████████▌| 958/1000 [1:14:18<04:00,  5.71s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  96%|█████████▌| 959/1000 [1:14:18<02:53,  4.22s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+2025-04-05 05:22:03,934 - INFO - Saved intermediate results for meta-llama/Meta-Llama-3-8B-Instruct (960/1000)
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  96%|█████████▌| 960/1000 [1:14:25<03:14,  4.86s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  96%|█████████▌| 961/1000 [1:14:31<03:30,  5.41s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  96%|█████████▌| 962/1000 [1:14:38<03:40,  5.80s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  96%|█████████▋| 963/1000 [1:14:45<03:44,  6.06s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  96%|█████████▋| 964/1000 [1:14:51<03:44,  6.25s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  96%|█████████▋| 965/1000 [1:14:58<03:43,  6.38s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  97%|█████████▋| 966/1000 [1:15:05<03:40,  6.48s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  97%|█████████▋| 967/1000 [1:15:12<03:35,  6.54s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  97%|█████████▋| 968/1000 [1:15:18<03:30,  6.58s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  97%|█████████▋| 969/1000 [1:15:25<03:25,  6.62s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+2025-04-05 05:23:11,155 - INFO - Saved intermediate results for meta-llama/Meta-Llama-3-8B-Instruct (970/1000)
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  97%|█████████▋| 970/1000 [1:15:32<03:22,  6.73s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  97%|█████████▋| 971/1000 [1:15:39<03:14,  6.72s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  97%|█████████▋| 972/1000 [1:15:45<03:07,  6.70s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  97%|█████████▋| 973/1000 [1:15:52<03:00,  6.69s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  97%|█████████▋| 974/1000 [1:15:59<02:54,  6.69s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  98%|█████████▊| 975/1000 [1:16:04<02:37,  6.31s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  98%|█████████▊| 976/1000 [1:16:11<02:34,  6.42s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  98%|█████████▊| 977/1000 [1:16:17<02:29,  6.49s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  98%|█████████▊| 978/1000 [1:16:24<02:24,  6.55s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  98%|█████████▊| 979/1000 [1:16:31<02:18,  6.59s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+2025-04-05 05:24:16,995 - INFO - Saved intermediate results for meta-llama/Meta-Llama-3-8B-Instruct (980/1000)
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  98%|█████████▊| 980/1000 [1:16:38<02:14,  6.71s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  98%|█████████▊| 981/1000 [1:16:38<01:32,  4.88s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  98%|█████████▊| 982/1000 [1:16:45<01:37,  5.41s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  98%|█████████▊| 983/1000 [1:16:46<01:07,  3.98s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  98%|█████████▊| 984/1000 [1:16:48<00:54,  3.43s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  98%|█████████▊| 985/1000 [1:16:49<00:43,  2.90s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  99%|█████████▊| 986/1000 [1:16:51<00:35,  2.56s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  99%|█████████▊| 987/1000 [1:16:54<00:35,  2.71s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  99%|█████████▉| 988/1000 [1:17:01<00:46,  3.91s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  99%|█████████▉| 989/1000 [1:17:03<00:36,  3.30s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+2025-04-05 05:24:49,105 - INFO - Saved intermediate results for meta-llama/Meta-Llama-3-8B-Instruct (990/1000)
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  99%|█████████▉| 990/1000 [1:17:10<00:44,  4.40s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  99%|█████████▉| 991/1000 [1:17:17<00:45,  5.09s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  99%|█████████▉| 992/1000 [1:17:23<00:44,  5.57s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  99%|█████████▉| 993/1000 [1:17:27<00:34,  4.93s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct:  99%|█████████▉| 994/1000 [1:17:30<00:27,  4.51s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct: 100%|█████████▉| 995/1000 [1:17:37<00:25,  5.16s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct: 100%|█████████▉| 996/1000 [1:17:44<00:22,  5.61s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct: 100%|█████████▉| 997/1000 [1:17:48<00:15,  5.20s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct: 100%|█████████▉| 998/1000 [1:17:52<00:09,  5.00s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Processing meta-llama/Meta-Llama-3-8B-Instruct: 100%|█████████▉| 999/1000 [1:17:59<00:05,  5.50s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+2025-04-05 05:25:40,874 - INFO - Saved intermediate results for meta-llama/Meta-Llama-3-8B-Instruct (1000/1000)
+Processing meta-llama/Meta-Llama-3-8B-Instruct: 100%|██████████| 1000/1000 [1:18:02<00:00,  4.65s/it]Processing meta-llama/Meta-Llama-3-8B-Instruct: 100%|██████████| 1000/1000 [1:18:02<00:00,  4.68s/it]
+2025-04-05 05:25:41,191 - INFO - Saved final results for meta-llama/Meta-Llama-3-8B-Instruct to results/meta-llama_Meta-Llama-3-8B-Instruct_results.json
+2025-04-05 05:25:41,237 - INFO - All models processed successfully

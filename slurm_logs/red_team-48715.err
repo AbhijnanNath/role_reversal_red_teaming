@@ -1,0 +1,78 @@
+
+CondaError: Run 'conda init' before 'conda activate'
+
+The following values were not passed to `accelerate launch` and had defaults used instead:
+	`--num_processes` was set to a value of `1`
+	`--num_machines` was set to a value of `1`
+	`--mixed_precision` was set to a value of `'no'`
+	`--dynamo_backend` was set to a value of `'no'`
+To avoid this warning pass in values for each of the problematic parameters or run `accelerate config`.
+2025-04-05 04:04:15,036 - INFO - Loading test prompts from red_team_test_prompts_anthropic.json
+2025-04-05 04:04:15,042 - INFO - Loaded 1000 test prompts
+2025-04-05 04:04:15,043 - INFO - Processing model: meta-llama/Meta-Llama-3-8B-Instruct
+2025-04-05 04:04:15,043 - INFO - Loading model and tokenizer for meta-llama/Meta-Llama-3-8B-Instruct
+2025-04-05 04:04:15,843 - INFO - We will use 90% of the memory on device 0 for storing the model, and 10% for the buffer to avoid OOM. You can set `max_memory` in to a higher value to use more memory (at your own risk).
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:02<00:07,  2.52s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:05<00:05,  2.71s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:08<00:02,  2.70s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:08<00:00,  1.92s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:08<00:00,  2.19s/it]
+2025-04-05 04:04:24,789 - INFO - Using device: cuda:0
+Processing meta-llama/Meta-Llama-3-8B-Instruct:   0%|          | 0/1000 [00:00<?, ?it/s]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+2025-04-05 04:04:31,886 - WARNING - compute_metrics function not available or error: name 'tokenizer' is not defined
+Processing meta-llama/Meta-Llama-3-8B-Instruct:   0%|          | 1/1000 [00:07<1:58:09,  7.10s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+2025-04-05 04:04:38,581 - WARNING - compute_metrics function not available or error: name 'tokenizer' is not defined
+Processing meta-llama/Meta-Llama-3-8B-Instruct:   0%|          | 2/1000 [00:13<1:54:06,  6.86s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+2025-04-05 04:04:45,274 - WARNING - compute_metrics function not available or error: name 'tokenizer' is not defined
+Processing meta-llama/Meta-Llama-3-8B-Instruct:   0%|          | 3/1000 [00:20<1:52:43,  6.78s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+2025-04-05 04:04:51,951 - WARNING - compute_metrics function not available or error: name 'tokenizer' is not defined
+Processing meta-llama/Meta-Llama-3-8B-Instruct:   0%|          | 4/1000 [00:27<1:51:54,  6.74s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+2025-04-05 04:04:58,613 - WARNING - compute_metrics function not available or error: name 'tokenizer' is not defined
+Processing meta-llama/Meta-Llama-3-8B-Instruct:   0%|          | 5/1000 [00:33<1:51:19,  6.71s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+2025-04-05 04:05:05,286 - WARNING - compute_metrics function not available or error: name 'tokenizer' is not defined
+Processing meta-llama/Meta-Llama-3-8B-Instruct:   1%|          | 6/1000 [00:40<1:50:59,  6.70s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+2025-04-05 04:05:08,675 - WARNING - compute_metrics function not available or error: name 'tokenizer' is not defined
+Processing meta-llama/Meta-Llama-3-8B-Instruct:   1%|          | 7/1000 [00:43<1:32:57,  5.62s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+2025-04-05 04:05:12,184 - WARNING - compute_metrics function not available or error: name 'tokenizer' is not defined
+Processing meta-llama/Meta-Llama-3-8B-Instruct:   1%|          | 8/1000 [00:47<1:21:46,  4.95s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+2025-04-05 04:05:18,811 - WARNING - compute_metrics function not available or error: name 'tokenizer' is not defined
+Processing meta-llama/Meta-Llama-3-8B-Instruct:   1%|          | 9/1000 [00:54<1:30:22,  5.47s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+2025-04-05 04:05:25,471 - WARNING - compute_metrics function not available or error: name 'tokenizer' is not defined
+2025-04-05 04:05:25,473 - INFO - Saved intermediate results for meta-llama/Meta-Llama-3-8B-Instruct (10/1000)
+Processing meta-llama/Meta-Llama-3-8B-Instruct:   1%|          | 10/1000 [01:00<1:36:20,  5.84s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+2025-04-05 04:05:28,794 - WARNING - compute_metrics function not available or error: name 'tokenizer' is not defined
+Processing meta-llama/Meta-Llama-3-8B-Instruct:   1%|          | 11/1000 [01:04<1:23:32,  5.07s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+2025-04-05 04:05:30,427 - WARNING - compute_metrics function not available or error: name 'tokenizer' is not defined
+Processing meta-llama/Meta-Llama-3-8B-Instruct:   1%|          | 12/1000 [01:05<1:06:15,  4.02s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+2025-04-05 04:05:32,553 - WARNING - compute_metrics function not available or error: name 'tokenizer' is not defined
+Processing meta-llama/Meta-Llama-3-8B-Instruct:   1%|▏         | 13/1000 [01:07<56:43,  3.45s/it]  Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+2025-04-05 04:05:39,213 - WARNING - compute_metrics function not available or error: name 'tokenizer' is not defined
+Processing meta-llama/Meta-Llama-3-8B-Instruct:   1%|▏         | 14/1000 [01:14<1:12:36,  4.42s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+2025-04-05 04:05:41,861 - WARNING - compute_metrics function not available or error: name 'tokenizer' is not defined
+Processing meta-llama/Meta-Llama-3-8B-Instruct:   2%|▏         | 15/1000 [01:17<1:03:46,  3.88s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+2025-04-05 04:05:44,322 - WARNING - compute_metrics function not available or error: name 'tokenizer' is not defined
+Processing meta-llama/Meta-Llama-3-8B-Instruct:   2%|▏         | 16/1000 [01:19<56:40,  3.46s/it]  Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+2025-04-05 04:05:46,085 - WARNING - compute_metrics function not available or error: name 'tokenizer' is not defined
+Processing meta-llama/Meta-Llama-3-8B-Instruct:   2%|▏         | 17/1000 [01:21<48:17,  2.95s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+2025-04-05 04:05:47,895 - WARNING - compute_metrics function not available or error: name 'tokenizer' is not defined
+Processing meta-llama/Meta-Llama-3-8B-Instruct:   2%|▏         | 18/1000 [01:23<42:38,  2.61s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+2025-04-05 04:05:48,619 - WARNING - compute_metrics function not available or error: name 'tokenizer' is not defined
+Processing meta-llama/Meta-Llama-3-8B-Instruct:   2%|▏         | 19/1000 [01:23<33:21,  2.04s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+2025-04-05 04:05:49,446 - WARNING - compute_metrics function not available or error: name 'tokenizer' is not defined
+2025-04-05 04:05:49,448 - INFO - Saved intermediate results for meta-llama/Meta-Llama-3-8B-Instruct (20/1000)
+Processing meta-llama/Meta-Llama-3-8B-Instruct:   2%|▏         | 20/1000 [01:24<27:23,  1.68s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+2025-04-05 04:05:56,098 - WARNING - compute_metrics function not available or error: name 'tokenizer' is not defined
+Processing meta-llama/Meta-Llama-3-8B-Instruct:   2%|▏         | 21/1000 [01:31<51:42,  3.17s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+2025-04-05 04:06:02,793 - WARNING - compute_metrics function not available or error: name 'tokenizer' is not defined
+Processing meta-llama/Meta-Llama-3-8B-Instruct:   2%|▏         | 22/1000 [01:38<1:08:54,  4.23s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+2025-04-05 04:06:07,859 - WARNING - compute_metrics function not available or error: name 'tokenizer' is not defined
+Processing meta-llama/Meta-Llama-3-8B-Instruct:   2%|▏         | 23/1000 [01:43<1:12:56,  4.48s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+2025-04-05 04:06:14,592 - WARNING - compute_metrics function not available or error: name 'tokenizer' is not defined
+Processing meta-llama/Meta-Llama-3-8B-Instruct:   2%|▏         | 24/1000 [01:49<1:23:51,  5.16s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+2025-04-05 04:06:15,359 - WARNING - compute_metrics function not available or error: name 'tokenizer' is not defined
+Processing meta-llama/Meta-Llama-3-8B-Instruct:   2%|▎         | 25/1000 [01:50<1:02:22,  3.84s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+2025-04-05 04:06:16,032 - WARNING - compute_metrics function not available or error: name 'tokenizer' is not defined
+Processing meta-llama/Meta-Llama-3-8B-Instruct:   3%|▎         | 26/1000 [01:51<46:53,  2.89s/it]  Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+2025-04-05 04:06:18,614 - WARNING - compute_metrics function not available or error: name 'tokenizer' is not defined
+Processing meta-llama/Meta-Llama-3-8B-Instruct:   3%|▎         | 27/1000 [01:53<45:21,  2.80s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+2025-04-05 04:06:19,224 - WARNING - compute_metrics function not available or error: name 'tokenizer' is not defined
+Processing meta-llama/Meta-Llama-3-8B-Instruct:   3%|▎         | 28/1000 [01:54<34:40,  2.14s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+2025-04-05 04:06:25,862 - WARNING - compute_metrics function not available or error: name 'tokenizer' is not defined
+Processing meta-llama/Meta-Llama-3-8B-Instruct:   3%|▎         | 29/1000 [02:01<56:28,  3.49s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+slurmstepd: error: *** JOB 48715 ON gnode002 CANCELLED AT 2025-04-05T04:06:26 ***

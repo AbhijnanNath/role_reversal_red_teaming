@@ -1,0 +1,27 @@
+
+CondaError: Run 'conda init' before 'conda activate'
+
+The following values were not passed to `accelerate launch` and had defaults used instead:
+	`--num_processes` was set to a value of `1`
+	`--num_machines` was set to a value of `1`
+	`--mixed_precision` was set to a value of `'no'`
+	`--dynamo_backend` was set to a value of `'no'`
+To avoid this warning pass in values for each of the problematic parameters or run `accelerate config`.
+2025-04-05 14:40:31,535 - INFO - Loading test prompts from red_team_test_prompts_anthropic_500.json
+2025-04-05 14:40:31,564 - INFO - Loaded 5000 test prompts
+2025-04-05 14:40:31,565 - INFO - Processing model: Qwen/Qwen2.5-0.5B-Instruct
+2025-04-05 14:40:31,565 - INFO - Loading model and tokenizer for Qwen/Qwen2.5-0.5B-Instruct
+Sliding Window Attention is enabled but not implemented for `sdpa`; unexpected results may be encountered.
+2025-04-05 14:40:32,758 - INFO - We will use 90% of the memory on device 0 for storing the model, and 10% for the buffer to avoid OOM. You can set `max_memory` in to a higher value to use more memory (at your own risk).
+2025-04-05 14:40:34,700 - INFO - Using device: cuda:0
+2025-04-05 14:40:34,701 - INFO - Using batch size of 8 for Qwen/Qwen2.5-0.5B-Instruct
+Processing Qwen/Qwen2.5-0.5B-Instruct:   0%|          | 0/625 [00:00<?, ?it/s]A decoder-only architecture is being used, but right-padding was detected! For correct generation results, please set `padding_side='left'` when initializing the tokenizer.
+Processing Qwen/Qwen2.5-0.5B-Instruct:   0%|          | 1/625 [00:06<1:07:57,  6.53s/it]A decoder-only architecture is being used, but right-padding was detected! For correct generation results, please set `padding_side='left'` when initializing the tokenizer.
+Processing Qwen/Qwen2.5-0.5B-Instruct:   0%|          | 2/625 [00:12<1:03:42,  6.14s/it]A decoder-only architecture is being used, but right-padding was detected! For correct generation results, please set `padding_side='left'` when initializing the tokenizer.
+Processing Qwen/Qwen2.5-0.5B-Instruct:   0%|          | 3/625 [00:18<1:01:43,  5.95s/it]A decoder-only architecture is being used, but right-padding was detected! For correct generation results, please set `padding_side='left'` when initializing the tokenizer.
+Processing Qwen/Qwen2.5-0.5B-Instruct:   1%|          | 4/625 [00:23<1:00:31,  5.85s/it]A decoder-only architecture is being used, but right-padding was detected! For correct generation results, please set `padding_side='left'` when initializing the tokenizer.
+Processing Qwen/Qwen2.5-0.5B-Instruct:   1%|          | 5/625 [00:29<59:50,  5.79s/it]  A decoder-only architecture is being used, but right-padding was detected! For correct generation results, please set `padding_side='left'` when initializing the tokenizer.
+Processing Qwen/Qwen2.5-0.5B-Instruct:   1%|          | 6/625 [00:35<59:37,  5.78s/it]A decoder-only architecture is being used, but right-padding was detected! For correct generation results, please set `padding_side='left'` when initializing the tokenizer.
+Processing Qwen/Qwen2.5-0.5B-Instruct:   1%|          | 7/625 [00:40<59:15,  5.75s/it]A decoder-only architecture is being used, but right-padding was detected! For correct generation results, please set `padding_side='left'` when initializing the tokenizer.
+Processing Qwen/Qwen2.5-0.5B-Instruct:   1%|▏         | 8/625 [00:46<58:59,  5.74s/it]A decoder-only architecture is being used, but right-padding was detected! For correct generation results, please set `padding_side='left'` when initializing the tokenizer.
+slurmstepd: error: *** JOB 48743 ON gnode002 CANCELLED AT 2025-04-05T14:41:21 ***
