@@ -34,56 +34,6 @@ from typing import Dict, List, Optional
 from dataclasses import dataclass, asdict
 
 
-@dataclass
-class FrictionMetrics:
-    """Metrics for generated friction statements"""
-    nll: float
-    predictive_entropy: float
-    mutual_information: float
-    perplexity: float
-    conditional_entropy: float
-
-@dataclass
-class FrictionOutputInterface:
-    """
-    Interface for friction generation output in collaborative weight estimation task.
-
-    Attributes:
-        friction_statement (str):
-            Main friction statement to be displayed/spoken.
-            Example: "Are we sure about comparing these blocks without considering their volume?"
-
-        task_state (str):
-            Current state of the weight estimation task.
-            Hidden from UI but useful for debugging.
-            Example: "Red (10g) and Blue blocks compared, Yellow block pending"
-
-        belief_state (str):
-            Participants' current beliefs about weights.
-            Helps explain friction but may not need display.
-            Example: "P1 believes yellow is heaviest, P2 uncertain about blue"
-
-        rationale (str):
-            Reasoning behind the friction intervention.
-            Could be shown as tooltip/explanation.
-            Example: "Participants are making assumptions without evidence"
-
-        metrics (Optional[FrictionMetrics]):
-            Model's generation metrics including confidence.
-            Useful for debugging and demo insights.
-    """
-
-    friction_statement: str
-    task_state: str
-    belief_state: str
-    rationale: str
-    raw_generation: str
-
-    metrics: Optional[FrictionMetrics] = None
-
-    def to_dict(self):
-        return asdict(self)  # Converts the object into a dictionary
-
 def compute_metrics(output_ids: torch.Tensor, scores: List[torch.Tensor], prompt_length: int, device = None, tokenizer = None) -> Dict:
     """Compute generation metrics and return token log probabilities"""
     with torch.no_grad():
@@ -109,22 +59,7 @@ def compute_metrics(output_ids: torch.Tensor, scores: List[torch.Tensor], prompt
             "token_strings": [tokenizer.decode([tid]) for tid in token_ids.cpu().tolist()]
         }
         
-#         # Calculate standard metrics as before
-#         token_probs = probs[torch.arange(len(token_ids), device=device), token_ids]
-#         nll = -torch.sum(torch.log(token_probs)) / len(token_ids)
-#         predictive_entropy = -torch.sum(probs * log_probs, dim=-1).mean()
-#         conditional_entropy = -torch.mean(torch.log(token_probs))
-#         mutual_information = max(predictive_entropy - conditional_entropy, 0.0)
-#         perplexity = torch.exp(nll)
-
-#         # Return both metrics and token log probabilities
-#         metrics = FrictionMetrics(
-#             nll=nll.item(),
-#             predictive_entropy=predictive_entropy.item(),
-#             mutual_information=mutual_information.item(),
-#             perplexity=perplexity.item(),
-#             conditional_entropy=conditional_entropy.item()
-#         )
+ 
         
         return {
 #             "metrics": metrics,
